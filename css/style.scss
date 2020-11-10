@@ -1,1 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+//defining variables
+$h1: 50px;
+$h2: 40px;
+$h3: 30px;
+$h4: 25px;
+$h5: 22px;
+$h6: 20px;
+$p: 16px;
+
+$text_color: #1A1A1A;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//defining font sizes
+$h: 50px,40px, 30px, 25px, 22px,20px,16px;
+$x: 1;
+@each $i in $h{
+
+    h#{$x}{
+        font-size: $i;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+    } 
+    $x: $x + 1;
+}  
+
