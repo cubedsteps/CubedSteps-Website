@@ -1,1 +1,1 @@
-$("#body").loadTemplate("templates/body.html");
+$("#body").loadTemplate("templates/homepage.html");
