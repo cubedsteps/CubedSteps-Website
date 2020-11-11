@@ -45,8 +45,14 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
-p {
+p, a {
   font-family: 'Poppins', sans-serif;
+}
+
+button {
+  background-color: #ff5e46;
+  color: white;
+  border: none;
 }
 
 #header {
@@ -74,5 +80,31 @@ p {
 #header #nav-contents .active {
   font-size: 40px;
   font-weight: 700;
+}
+
+#body .body-left-column {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#body .body-left-column div h1 {
+  margin-bottom: 30px;
+}
+
+#body .body-left-column div h1 span {
+  color: #ff5e46;
+}
+
+#body .body-left-column div a {
+  background-color: #ff5e46;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
