@@ -1,11 +1,14 @@
 var nav_contents = [{
     name: "Home",
+    class_name: "active"
 },
 {
-    name: 'About'
+    name: 'Services',
+    class_name: ""
+
 },
 {
-    name: 'Services'
+    name: 'Our Projects'
 },
 {
     name: 'Lets Work'
