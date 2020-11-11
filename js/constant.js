@@ -8,8 +8,23 @@ var nav_contents = [{
 
 },
 {
-    name: 'Our Projects'
+    name: 'Our Projects',
+    class_name:""
 },
 {
-    name: 'Lets Work'
+    name: 'Lets Work',
+    class_name:""
+}]
+
+var services=[{
+    services_name:"Product Development"
+},
+{
+    services_name: "Search Engine Optimization"
+},
+{
+    services_name: "E-Commerce"
+},
+{
+    services_name: "Data Analytics and Visualization"
 }]
