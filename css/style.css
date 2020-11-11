@@ -9,42 +9,70 @@
 h1 {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
 }
 
 h2 {
   font-size: 40px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
 }
 
 h3 {
   font-size: 30px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
 }
 
 h4 {
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
 }
 
 h5 {
   font-size: 22px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
 }
 
 h6 {
   font-size: 20px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
 }
 
 h7 {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+#header {
+  padding: 50px;
+}
+
+#header .col-lg-9 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header #nav-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header #nav-contents .nav-items {
+  margin: 0 25px 0 25px;
+}
+
+#header #nav-contents .active {
+  font-size: 40px;
   font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

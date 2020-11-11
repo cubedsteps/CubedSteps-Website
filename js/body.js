@@ -1,0 +1,1 @@
+$("#body").loadTemplate("templates/body.html");

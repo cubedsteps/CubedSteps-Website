@@ -11,6 +11,8 @@ $p: 16px;
 
 $text_color: #1A1A1A;
 
+$primary_color: #ff5e46;
+
 *{
     margin: 0;
     padding: 0;
@@ -25,8 +27,34 @@ $x: 1;
     h#{$x}{
         font-size: $i;
         font-family: 'Poppins', sans-serif;
-        font-weight: 700;
     } 
     $x: $x + 1;
 }  
+
+h1,h2,h3{
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+#header{
+    padding: 50px;
+    .col-lg-9{
+        display: grid;
+        align-items: center;
+    }
+    #nav-contents{
+        display: flex;
+        
+        .nav-items{
+            margin: 0 25px 0 25px;
+        }
+        .active{
+            font-size: $h2;
+            font-weight: 700;
+        }
+    }
+}
 
