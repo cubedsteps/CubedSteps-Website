@@ -31,7 +31,11 @@ $x: 1;
         font-family: 'Poppins', sans-serif;
     } 
     $x: $x + 1;
-}  
+} 
+
+h1, h2, h3, h4, h5, h6, p, a{
+    color: $text_color;
+}
 
 h1,h2,h3{
     font-weight: 700;
@@ -39,6 +43,8 @@ h1,h2,h3{
 
 p,a{
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+
 }
 
 button{
@@ -49,7 +55,12 @@ button{
 
 #header{
     padding: 50px;
-    .col-lg-9{
+    height: 211px;
+    .col-lg-4{
+        display: grid;
+        align-items: center;
+    }
+    .col-lg-8{
         display: grid;
         align-items: center;
     }
@@ -58,10 +69,17 @@ button{
         
         .nav-items{
             margin: 0 25px 0 25px;
+            position: relative;
+            top: 40px;
+            right: 160px;
         }
+
         .active{
             font-size: $h2;
             font-weight: 700;
+            position: relative;
+            top: -40px;
+            left: 120px;
         }
     }
 }
@@ -87,7 +105,6 @@ button{
                     font-size: $a;
                     font-weight: 700;
                     text-transform: uppercase;
-                    text-decoration: none;
                     color: white;
                     -webkit-box-shadow: -14px 14px 30px 0px rgba(255, 94, 70, 0.5);
                     -moz-box-shadow:    -14px 14px 30px 0px rgba(255, 94, 70, 0.5);
@@ -111,6 +128,7 @@ button{
                 img{
                     margin-left: auto;
                     margin-right: auto;
+                    height: 138px;
                 }
             }
         }

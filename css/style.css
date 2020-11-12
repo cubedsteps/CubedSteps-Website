@@ -41,12 +41,17 @@ h7 {
   font-family: 'Poppins', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+  color: #1A1A1A;
+}
+
 h1, h2, h3 {
   font-weight: 700;
 }
 
 p, a {
   font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 
 button {
@@ -57,9 +62,18 @@ button {
 
 #header {
   padding: 50px;
+  height: 211px;
 }
 
-#header .col-lg-9 {
+#header .col-lg-4 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .col-lg-8 {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -75,11 +89,17 @@ button {
 
 #header #nav-contents .nav-items {
   margin: 0 25px 0 25px;
+  position: relative;
+  top: 40px;
+  right: 160px;
 }
 
 #header #nav-contents .active {
   font-size: 40px;
   font-weight: 700;
+  position: relative;
+  top: -40px;
+  left: 120px;
 }
 
 #body #homepage .homepage-left-column {
@@ -105,7 +125,6 @@ button {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  text-decoration: none;
   color: white;
   -webkit-box-shadow: -14px 14px 30px 0px rgba(255, 94, 70, 0.5);
   box-shadow: -14px 14px 30px 0px rgba(255, 94, 70, 0.5);
@@ -127,5 +146,6 @@ button {
 #body #services .row div img {
   margin-left: auto;
   margin-right: auto;
+  height: 138px;
 }
 /*# sourceMappingURL=style.css.map */

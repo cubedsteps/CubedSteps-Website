@@ -17,7 +17,7 @@ var nav_contents = [{
 }]
 
 var services=[{
-    services_name:"Product Development"
+    services_name:"Product Development",
 },
 {
     services_name: "Search Engine Optimization"
@@ -28,3 +28,5 @@ var services=[{
 {
     services_name: "Data Analytics and Visualization"
 }]
+
+
