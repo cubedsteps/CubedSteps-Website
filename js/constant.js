@@ -29,4 +29,9 @@ var services=[{
     services_name: "Data Analytics and Visualization"
 }]
 
-
+var testimonials = [{
+    image:"",
+    full_name:"Sohail Dangol",
+    work:"Designer",
+    testimonial:"iapjgfdopin oiefsdgion afsdinoef ai eifowesnf asiof aojsdi"
+}]

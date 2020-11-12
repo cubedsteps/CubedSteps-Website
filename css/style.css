@@ -102,6 +102,24 @@ button {
   left: 120px;
 }
 
+.side-box {
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  margin-bottom: 20px;
+  background-color: #ff5e46;
+  height: 60px;
+  width: 70px;
+}
+
+#left-side {
+  padding-left: 0px;
+}
+
+#left-side .testimonial-box {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
 #body #homepage .homepage-left-column {
   display: -ms-grid;
   display: grid;
@@ -147,5 +165,11 @@ button {
   margin-left: auto;
   margin-right: auto;
   height: 138px;
+}
+
+#right-side .why-us-box {
+  margin-left: 20px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
