@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #FAFAFA;
+}
+
 h1 {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
@@ -41,12 +45,17 @@ h7 {
   font-family: 'Poppins', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+  color: #1A1A1A;
+}
+
 h1, h2, h3 {
   font-weight: 700;
 }
 
 p, a {
   font-family: 'Poppins', sans-serif;
+  text-decoration: none;
 }
 
 button {
@@ -57,9 +66,18 @@ button {
 
 #header {
   padding: 50px;
+  height: 211px;
 }
 
-#header .col-lg-9 {
+#header .col-lg-4 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .col-lg-8 {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -75,11 +93,35 @@ button {
 
 #header #nav-contents .nav-items {
   margin: 0 25px 0 25px;
+  position: relative;
+  top: 40px;
+  right: 160px;
 }
 
 #header #nav-contents .active {
   font-size: 40px;
   font-weight: 700;
+  position: relative;
+  top: -40px;
+  left: 120px;
+}
+
+.side-box {
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  margin-bottom: 20px;
+  background-color: #ff5e46;
+  height: 60px;
+  width: 70px;
+}
+
+#left-side {
+  padding-left: 0px;
+}
+
+#left-side .testimonial-box {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 #body #homepage .homepage-left-column {
@@ -105,7 +147,6 @@ button {
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
-  text-decoration: none;
   color: white;
   -webkit-box-shadow: -14px 14px 30px 0px rgba(255, 94, 70, 0.5);
   box-shadow: -14px 14px 30px 0px rgba(255, 94, 70, 0.5);
@@ -125,7 +166,16 @@ button {
 }
 
 #body #services .row div img {
-  margin-left: auto;
-  margin-right: auto;
+  height: 138px;
+}
+
+#right-side {
+  padding-right: 0px;
+}
+
+#right-side .why-us-box {
+  float: right;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */

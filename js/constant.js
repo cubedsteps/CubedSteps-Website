@@ -17,7 +17,7 @@ var nav_contents = [{
 }]
 
 var services=[{
-    services_name:"Product Development"
+    services_name:"Product Development",
 },
 {
     services_name: "Search Engine Optimization"
@@ -27,4 +27,11 @@ var services=[{
 },
 {
     services_name: "Data Analytics and Visualization"
+}]
+
+var testimonials = [{
+    image:"",
+    full_name:"Sohail Dangol",
+    work:"Designer",
+    testimonial:"iapjgfdopin oiefsdgion afsdinoef ai eifowesnf asiof aojsdi"
 }]
