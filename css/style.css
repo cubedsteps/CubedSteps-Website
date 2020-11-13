@@ -53,6 +53,10 @@ h1, h2, h3 {
   font-weight: 700;
 }
 
+h4, h5, h6 {
+  font-weight: 400;
+}
+
 p, a {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
@@ -167,6 +171,30 @@ button {
 
 #body #services .row div img {
   height: 138px;
+}
+
+#body #lets-work #contact {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#body #lets-work i {
+  font-size: 45px;
+}
+
+#body #lets-work .fa-facebook-square {
+  color: #4646FF;
+}
+
+#body #lets-work .fa-envelope {
+  color: #AAAAAA;
+}
+
+#body #lets-work .fa-phone-alt {
+  color: #47CD54;
 }
 
 #right-side {
