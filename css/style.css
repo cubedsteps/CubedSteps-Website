@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #FAFAFA;
+}
+
 h1 {
   font-size: 50px;
   font-family: 'Poppins', sans-serif;
@@ -162,13 +166,15 @@ button {
 }
 
 #body #services .row div img {
-  margin-left: auto;
-  margin-right: auto;
   height: 138px;
 }
 
+#right-side {
+  padding-right: 0px;
+}
+
 #right-side .why-us-box {
-  margin-left: 20px;
+  float: right;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
 }

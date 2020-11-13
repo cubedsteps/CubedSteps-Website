@@ -15,10 +15,16 @@ $text_color: #1A1A1A;
 $primary_color: #ff5e46;
 $primary-hover-color:#e6553f;
 
+$bg-color: #FAFAFA;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    background-color: $bg-color;
 }
 
 //defining font sizes
@@ -145,8 +151,6 @@ button{
                 padding: 40px;
                 text-align: center;
                 img{
-                    margin-left: auto;
-                    margin-right: auto;
                     height: 138px;
                 }
             }
@@ -155,8 +159,9 @@ button{
 }
 
 #right-side{
+    padding-right: 0px;
     .why-us-box{
-        margin-left: 20px;
+        float: right;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
     }
