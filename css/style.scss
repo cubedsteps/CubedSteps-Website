@@ -47,6 +47,10 @@ h1,h2,h3{
     font-weight: 700;
 }
 
+h4,h5,h6{
+    font-weight: 400;
+}
+
 p,a{
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
@@ -91,21 +95,38 @@ button{
 }
 
 .side-box{
+    -webkit-box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
+    -moz-box-shadow:    0px 15px 30px 0px rgba(163, 159, 159, 0.75);
+    box-shadow:         0px 15px 30px 0px rgba(163, 159, 159, 0.75);
+    margin-bottom: 20px;
+    background-color: $bg-color;
+    height: 60px;
+    width: 70px;
+}
+
+.side-box:hover{
+    transition: 0.5s all;
+    background-color: $primary_color;
     -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
     -moz-box-shadow:    0px 15px 30px 0px rgba(255, 94, 70, 0.75);
     box-shadow:         0px 15px 30px 0px rgba(255, 94, 70, 0.75);
-    margin-bottom: 20px;
-    background-color: $primary_color;
-    height: 60px;
-    width: 70px;
+    height: 200px;
+    width: 300px;
+    
 
 }
 
 #left-side{
+    z-index: 1;
     padding-left: 0px;
     .testimonial-box{        
         border-top-right-radius: 50%;
         border-bottom-right-radius: 50%;
+    }
+
+    .testimonial-box:hover{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 }
 
@@ -123,8 +144,7 @@ button{
                 }
     
                 a{
-                    position: relative;
-    
+                    position: relative;    
                     background-color: $primary_color;
                     padding: 15px 30px;
                     font-size: $a;
@@ -138,8 +158,7 @@ button{
     
                 a:hover{
                     background-color: $primary-hover-color;
-                    transform: rotate(180deg);
-                    transition: all .5s ease-in-out;
+                    transition: all .5s;
                 }
             }                
         }
@@ -156,6 +175,45 @@ button{
             }
         }
     }
+
+    #projects{
+        .row{
+            div{
+                display: grid;
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+        }
+        img{
+            height: 178px;
+        }
+    }
+
+    #lets-work{
+
+        #contact{
+            display: grid;
+            align-items: center;
+            .row{
+                
+            }
+        }
+        i{
+            font-size: 45px;            
+        }
+
+        .fa-facebook-square{
+            color:#4646FF;
+        }
+
+        .fa-envelope{
+            color:#AAAAAA;
+        }
+
+        .fa-phone-alt{
+            color: #47CD54;
+        }
+    }
 }
 
 #right-side{
@@ -164,6 +222,11 @@ button{
         float: right;
         border-top-left-radius: 50%;
         border-bottom-left-radius: 50%;
+    }
+
+    .why-us-box:hover{
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
 }
 
