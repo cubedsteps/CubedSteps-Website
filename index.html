@@ -9,23 +9,33 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <script src="js/vendor/jquery.min.js"></script>
     <script src="js/vendor/jquery.loadTemplate.min.js"></script>
+    <link rel="stylesheet" href="/css/animate.css/animate.css">
+    <script src="/js/Wowjs/wow.js"></script>
 </head>
 <body>
     <div class="container-fluid">
         <div id="header" class="row">
         </div>
-        <div class="row">
-            <div id="left-side" class="col-lg-1"></div> 
-            <div id="body" class="col-lg-10"></div> 
-            <div id="right-side" class="col-lg-1"></div> 
+        <div id="as" class="row">
+            <div id="left-side" class="col-md-1 col-sm-1"></div> 
+            <div id="body" class="col-md-10 col-sm-10"></div> 
+            <div id="right-side" class="col-md-1 col-sm-1"></div> 
         </div>
     </div>
+
+
     <script src="js/constant.js"></script>
     <script src="js/script.js"></script>
     <script src="js/header.js"></script>
-    <script src="js/body.js"></script>
     <script src="js/left-side.js"></script>
-    <script src="js/body.js"></script>
     <script src="js/right-side.js"></script>
+    <script src="js/load_template.js"></script>
+    <script src="js/animations.js"></script>
+
+
+    <script>
+    new WOW().init();
+
+    </script>
 </body>
 </html>

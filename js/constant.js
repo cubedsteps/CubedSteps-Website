@@ -1,6 +1,6 @@
 var nav_contents = [{
     name: "Home",
-    class_name: "active"
+    class_name: "active home-active"
 },
 {
     name: 'Services',
