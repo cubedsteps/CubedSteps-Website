@@ -139,27 +139,6 @@ button {
   left: 120px;
 }
 
-.side-box {
-  -webkit-box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
-  box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
-  margin-bottom: 20px;
-  background-color: #FAFAFA;
-  height: 60px;
-  width: 70px;
-  -webkit-transition: 0.5s all;
-  transition: 0.5s all;
-  padding: 5px;
-}
-
-.side-box-click {
-  background-color: #ff5e46;
-  -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
-  box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
-  height: 230px;
-  width: 300px;
-  padding: 20px;
-}
-
 #left-side {
   position: relative;
   z-index: 1;
@@ -172,6 +151,15 @@ button {
 }
 
 #left-side .testimonial-items .testimonial-box {
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
+  box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
+  margin-bottom: 20px;
+  background-color: #FAFAFA;
+  height: 60px;
+  width: 70px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  padding: 5px;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
@@ -179,6 +167,12 @@ button {
 #left-side .testimonial-items .testimonial-box-click {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  background-color: #ff5e46;
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  height: 230px;
+  width: 300px;
+  padding: 20px;
 }
 
 #left-side .testimonial-items .image {
@@ -341,17 +335,49 @@ button {
 }
 
 #right-side .why-us-box {
-  float: right;
+  background-color: #ff5e46;
   position: fixed;
+  float: right;
   top: 250px;
   right: 0;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
+  box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
+  height: 70px;
+  width: 80px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  padding: 5px;
+}
+
+#right-side .why-us-box .why-us-heading {
+  margin-top: 15px;
+  text-align: center;
+}
+
+#right-side .why-us-box .why-us-all-contents {
+  display: none;
+}
+
+#right-side .why-us-box .why-us-all-contents .why-us-content {
+  padding: 20px;
+  text-align: center;
+}
+
+#right-side .why-us-box .why-us-all-contents .why-us-content i {
+  padding: 10px;
+  font-size: 30px;
 }
 
 #right-side .why-us-box-click {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  height: 430px;
+  width: 300px;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 750px) {

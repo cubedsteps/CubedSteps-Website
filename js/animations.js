@@ -1,16 +1,36 @@
 
 $(document).ready(function(){
-    var side_box = $(".side-box");
-    side_box.each(function(){
+    var testimonial_box = $(".testimonial-box");
+    var why_us_box = $(".why-us-box");    
+
+    //left-side transitions
+    testimonial_box.each(function(){
         $(this).click(function(){
-        if($(this).hasClass('side-box-click')==false){
-            $(this).addClass('side-box-click testimonial-box-click why-us-box-click');
-            console.log($(this + '.testimonial-box'));
-        }else if($(this).hasClass('side-box-click')==true){
-            $(this).removeClass('side-box-click testimonial-box-click why-us-box-click');
+        if($(this).hasClass('testimonial-box-click')==false){            
+            $(this).addClass('testimonial-box-click');
+            $('.testimonial-content').addClass('testimonial-content-show');
+            // $(this + ' .testimonial-content').addClass('testimonial-content-show');
+        }else if($(this).hasClass('testimonial-box-click')==true){
+            $(this).removeClass('testimonial-box-click');
+            $('.testimonial-content').removeClass('testimonial-content-show');
         }
         })
     });
+
+    //why-us transition
+    why_us_box.click(function(){
+        if($(this).hasClass('why-us-box-click')==false){
+            $(this).addClass('why-us-box-click');
+            $('.why-us-heading').css('display','none');
+            $('.why-us-all-contents').css('display','block');
+        } else if($(this).hasClass('why-us-box-click')==true){
+            $(this).removeClass('why-us-box-click');
+            $('.why-us-heading').css('display','block');
+            $('.why-us-all-contents').css('display','none');
+        }
+    })
+
+    // services page
     $('.show-more').click(function(){
         if($(this).hasClass('show-more-click')==false){
             $(this).addClass('show-more-click');
