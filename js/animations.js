@@ -1,21 +1,34 @@
-
 $(document).ready(function(){
     var testimonial_box = $(".testimonial-box");
     var why_us_box = $(".why-us-box");    
 
     //left-side transitions
-    testimonial_box.each(function(){
-        $(this).click(function(){
-        if($(this).hasClass('testimonial-box-click')==false){            
-            $(this).addClass('testimonial-box-click');
-            $('.testimonial-content').addClass('testimonial-content-show');
-            // $(this + ' .testimonial-content').addClass('testimonial-content-show');
-        }else if($(this).hasClass('testimonial-box-click')==true){
-            $(this).removeClass('testimonial-box-click');
-            $('.testimonial-content').removeClass('testimonial-content-show');
-        }
-        })
-    });
+    // testimonial_box.each(function(){
+    //     $(this).click(function(){
+    //     if($(this).hasClass('testimonial-box-click')==false){            
+    //         $(this).addClass('testimonial-box-click');
+    //         //$('.testimonial-content').addClass('testimonial-content-show');
+    //         $(this + ' .testimonial-content').addClass('testimonial-content-show');
+    //     }else if($(this).hasClass('testimonial-box-click')==true){
+    //         $(this).removeClass('testimonial-box-click');
+    //         $('.testimonial-content').removeClass('testimonial-content-show');
+    //     }
+    //     })
+    // });
+
+    $(".testimonial-box").click(function(){
+        console.log($(this));
+
+        // $('.testimonial-box').each(function(){
+        //     if ($(this).hasClass('testimonial-box-click')){
+        //         $(this).removeClass('testimonial-box-click');
+        //         $(this).removeClass('testimonial-content-show');
+        //     }
+        // })
+
+        $(this).toggleClass('testimonial-box-click');
+        $(this).find('.testimonial-content').toggleClass('testimonial-content-show');
+    })
 
     //why-us transition
     why_us_box.click(function(){

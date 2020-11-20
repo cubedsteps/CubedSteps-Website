@@ -85,58 +85,48 @@ button {
           align-items: center;
 }
 
-#header .col-md-4 img {
+#header .col-md-4 #logo {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header .col-md-4 #logo img {
   height: 68px;
 }
 
-#header .col-md-8 {
+#header .col-md-5 {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#header #nav-contents {
+#header .col-md-5 #nav-contents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-#header #nav-contents .nav-items {
+#header .col-md-5 #nav-contents .nav-items {
   margin: 0 25px 0 25px;
-  position: relative;
-  top: 40px;
+  margin-top: 40px;
 }
 
-#header #nav-contents .active {
+#header .col-md-5 #nav-contents .active {
+  margin-top: 0;
   font-size: 40px;
   font-weight: 700;
-}
-
-#header #nav-contents .home-active {
   position: absolute;
   top: -40px;
-  left: 120px;
-}
-
-#header #nav-contents .services-active {
-  position: absolute;
-  top: -40px;
-  left: 120px;
-}
-
-#header #nav-contents .projects-active {
-  position: absolute;
-  top: -40px;
-  left: 120px;
-}
-
-#header #nav-contents .work-active {
-  position: absolute;
-  top: -40px;
-  left: 120px;
+  left: 110px;
 }
 
 #left-side {
@@ -298,15 +288,22 @@ button {
   background-size: contain;
   position: relative;
   padding: 20px;
+  overflow: hidden;
 }
 
 #body #projects .row .col-lg-12 .project-description {
   position: relative;
-  top: 100px;
+  top: 190px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 #body #projects .row .col-lg-12 .project-description h3 {
   padding-bottom: 10px;
+}
+
+#body #projects .row .col-lg-12:hover .project-description {
+  top: 100px;
 }
 
 #body #projects img {
@@ -394,7 +391,13 @@ button {
   padding: 20px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
+  #all-contents {
+    margin-top: 30px;
+  }
+  #header .col-md-5 {
+    margin-top: 60px;
+  }
   #homepage .homepage-left-column {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;

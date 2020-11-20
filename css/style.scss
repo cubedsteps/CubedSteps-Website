@@ -76,51 +76,37 @@ button{
     .col-md-4{
         display: grid;
         align-items: center;
-        img{
-            height: 68px;
-        }
-    }
-    .col-md-8{
-        display: grid;
-        align-items: center;
-    }
-    #nav-contents{
-        display: flex;
-        position: relative;
         
-        .nav-items{
-            margin: 0 25px 0 25px;
+        #logo{
+            display: grid;
+            justify-content: center;
+            img{
+                height: 68px;
+            }
+        }
+    }
+    .col-md-5{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        #nav-contents{
+            display: flex;
             position: relative;
-            top: 40px;
-        }
-
-        .active{            
-            font-size: $h2;
-            font-weight: 700;
-        }
-
-        .home-active{
-            position: absolute;
-            top: -40px;
-            left: 120px;
-        }
-
-        .services-active{
-            position: absolute;
-            top: -40px;
-            left: 120px;
-        }
-
-        .projects-active{
-            position: absolute;
-            top: -40px;
-            left: 120px;
-        }
-
-        .work-active{
-            position: absolute;
-            top: -40px;
-            left: 120px;
+            
+            .nav-items{
+                margin: 0 25px 0 25px;
+                margin-top: 40px;
+            }
+    
+            .active{   
+                margin-top: 0;         
+                font-size: $h2;
+                font-weight: 700;
+                position: absolute;
+                top: -40px;
+                left: 110px;
+            }
+    
         }
     }
 }
@@ -278,13 +264,21 @@ button{
                 background-size: contain;
                 position: relative;
                 padding: 20px;
+                overflow: hidden;
 
                 .project-description{
                     position: relative;
-                    top: 100px;
+                    top: 190px;
+                    transition: 0.5s all;
                     h3{
                         padding-bottom: 10px;
                     }
+                }
+            }
+
+            .col-lg-12:hover{
+                .project-description{
+                    top: 100px;
                 }
             }
         }
@@ -377,7 +371,16 @@ button{
     }
 }
 
-@media only screen and (max-width: 750px){
+@media only screen and (max-width: 768px){
+    #all-contents{
+        margin-top: 30px;
+    }
+    #header{
+        .col-md-5{
+            margin-top: 60px;
+        }
+    }
+
     #homepage{
         .homepage-left-column{
             order: 1;
