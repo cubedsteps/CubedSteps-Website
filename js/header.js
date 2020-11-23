@@ -4,17 +4,7 @@ $("#nav-contents").loadTemplate("templates/nav-contents.html", nav_contents);
 $(document).on('click','.nav-items',function(){
     let a;
     if($(this).text()=="Home"){
-        console.log("*");
-        if($("#homepage").length){
-            homepage_exit();
-            a = document.querySelector('.homepage-left-column');
-        } else if($("#services").length){
-            servicepage_exit();
-            a = document.querySelector('.service-box');
-        } else if($("#projects").length){
-            projectspage_exit();
-            a = document.querySelector('.project-box');
-        }
+        animation();
         setTimeout(function(){
             $("#body").empty();
             $("#body").loadTemplate("templates/homepage.html");
@@ -26,16 +16,7 @@ $(document).on('click','.nav-items',function(){
     } 
     else if($(this).text()=="Services")
     {
-        if($("#homepage").length){
-            homepage_exit();
-            a = document.querySelector('.homepage-left-column');
-        } else if($("#services").length){
-            servicepage_exit();
-            a = document.querySelector('.service-box');
-        } else if($("#projects").length){
-            projectspage_exit();
-            a = document.querySelector('.project-box');
-        }
+        animation();
         setTimeout(function(){
             $("#body").empty();
             $("#body").loadTemplate("templates/services.html");
@@ -49,16 +30,7 @@ $(document).on('click','.nav-items',function(){
     } 
     else if($(this).text()=="Our Projects")
     {        
-        if($("#homepage").length){
-            homepage_exit();
-            a = document.querySelector('.homepage-left-column');
-        } else if($("#services").length){
-            servicepage_exit();
-            a = document.querySelector('.service-box');
-        } else if($("#projects").length){
-            projectspage_exit();
-            a = document.querySelector('.project-box');
-        }
+        animation();
         setTimeout(function(){
             $("#body").empty();
 
@@ -72,9 +44,30 @@ $(document).on('click','.nav-items',function(){
     } 
     else if($(this).text()=="Lets Work")
     {
-        $("#body").loadTemplate("templates/lets-work.html");
+        animation();
+        
+        setTimeout(function(){
+            $("#body").empty();
+            $("#body").loadTemplate("templates/lets-work.html");
+        },1000)
     }
 })
+
+function animation(){
+    if($("#homepage").length){
+        homepage_exit();
+        a = document.querySelector('.homepage-left-column');
+    } else if($("#services").length){
+        servicepage_exit();
+        a = document.querySelector('.service-box');
+    } else if($("#projects").length){
+        projectspage_exit();
+        a = document.querySelector('.project-box');
+    } else if($("#lets-work").length){
+        letswork_exit();
+        a = document.querySelector('.phone-number');
+    }
+}
 
 function homepage_exit(){
     $(".homepage-left-column").removeClass('animate__animated animate__rotateInDownLeft')
@@ -91,4 +84,19 @@ function servicepage_exit(){
 function projectspage_exit(){
     $(".project-box").removeClass('animate__animated animate__fadeInUp')
     $(".project-box").addClass('animate__animated animate__fadeOutUp')
+}
+
+function letswork_exit(){
+    $(".phone-number").removeClass('animate__animated animate__fadeInLeft')
+    $(".phone-number").addClass('animate__animated animate__fadeOutRight')
+    $(".mail").removeClass('animate__animated animate__fadeInLeft')
+    $(".mail").addClass('animate__animated animate__fadeOutRight')
+    $(".facebook").removeClass('animate__animated animate__fadeInLeft')
+    $(".facebook").addClass('animate__animated animate__fadeOutRight')
+    $(".instagram").removeClass('animate__animated animate__fadeInLeft')
+    $(".instagram").addClass('animate__animated animate__fadeOutRight')
+    $(".medium").removeClass('animate__animated animate__fadeInLeft')
+    $(".medium").addClass('animate__animated animate__fadeOutRight')
+    $("#map").removeClass('animate__animated animate__fadeIn')
+    $("#map").addClass('animate__animated animate__fadeOut')
 }

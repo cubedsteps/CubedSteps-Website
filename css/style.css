@@ -281,8 +281,7 @@ button {
   opacity: 1;
 }
 
-#body #projects .row .col-lg-12 {
-  margin-bottom: 30px;
+#body #projects .row .project-box {
   height: 272px;
   background-position: center;
   background-size: contain;
@@ -291,18 +290,22 @@ button {
   overflow: hidden;
 }
 
-#body #projects .row .col-lg-12 .project-description {
+#body #projects .row .project-box .project-description {
   position: relative;
-  top: 190px;
+  top: 193px;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
 }
 
-#body #projects .row .col-lg-12 .project-description h3 {
+#body #projects .row .project-box .project-description h3 {
   padding-bottom: 10px;
 }
 
-#body #projects .row .col-lg-12:hover .project-description {
+#body #projects .row a:hover {
+  cursor: pointer;
+}
+
+#body #projects .row a:hover .project-description {
   top: 100px;
 }
 
@@ -324,8 +327,24 @@ button {
   margin-right: 10px;
 }
 
-#body #lets-work #contact-us .mail, #body #lets-work #contact-us .instagram {
-  margin-top: 30px;
+#body #lets-work #contact-us .fa-phone-alt {
+  color: #4aad4a;
+}
+
+#body #lets-work #contact-us .fa-envelope {
+  color: #a0a0a0;
+}
+
+#body #lets-work #contact-us .fa-facebook-square {
+  color: #3273ff;
+}
+
+#body #lets-work #contact-us .fa-instagram {
+  color: #ff83ea;
+}
+
+#body #lets-work #contact-us .mail, #body #lets-work #contact-us .instagram, #body #lets-work #contact-us .phone-number, #body #lets-work #contact-us .facebook, #body #lets-work #contact-us .medium {
+  margin-top: 50px;
 }
 
 #body #lets-work #map {
@@ -361,7 +380,7 @@ button {
 }
 
 #right-side .why-us-box .why-us-heading {
-  margin-top: 15px;
+  margin-top: 17px;
   text-align: center;
 }
 
@@ -384,7 +403,7 @@ button {
   border-bottom-left-radius: 20px;
   -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
   box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
-  height: 430px;
+  height: 350px;
   width: 300px;
   padding: 20px;
 }
@@ -407,6 +426,11 @@ button {
   }
   #homepage .homepage-left-column div h1 span {
     color: #ff5e46;
+  }
+  #lets-work #contact-us p {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
