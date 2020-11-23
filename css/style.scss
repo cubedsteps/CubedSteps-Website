@@ -288,33 +288,25 @@ button{
     }
 
     #lets-work{
+        #contact-us{
+            p{
+                display: flex;
+                align-items: center;
+            }
+            i{
+                font-size: 36px;
+                margin-right: 10px;
+            }
 
-        #contact{
-            display: grid;
-            align-items: center;
-            .row{
-                i{
-                    font-size: 45px;            
-                }
-        
-                .fa-facebook-square{
-                    color:#4646FF;
-                }
-        
-                .fa-envelope{
-                    color:#AAAAAA;
-                }
-        
-                .fa-phone-alt{
-                    color: #47CD54;
-                }                
+            .mail, .instagram{
+                margin-top: 30px;
             }
         }
-
         #map{
+            margin-top: 30px;
             iframe{
-                width:618px;
-                height:422px;
+                width: 100%;
+                height: 347px;
             }
         }
     }
