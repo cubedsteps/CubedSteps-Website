@@ -1,56 +1,49 @@
-new WOW().init();
 
-$("#nav-contents").loadTemplate("templates/nav-contents.html", nav_contents);
 $(document).on('click','.nav-items',function(){
+    $(this).parent().fadeOut("slow");
     let a;
     if($(this).text()=="Home"){
         animation();
+        navTrans();     
+        $(this).addClass("home-active active");
         setTimeout(function(){
             $("#body").empty();
             $("#body").loadTemplate("templates/homepage.html");
         },1000)
-        // a.addEventListener('animationend', () => {
-        //     console.log("home");
-        //     $("#body").loadTemplate("templates/homepage.html");
-        // });
     } 
     else if($(this).text()=="Services")
     {
         animation();
+        navTrans();     
+        $(this).addClass("service-active active");
+
         setTimeout(function(){
             $("#body").empty();
             $("#body").loadTemplate("templates/services.html");
         },1000)
-        // a.addEventListener('animationend', () => {
-        //     console.log("service");
-
-        //     $("#body").loadTemplate("templates/services.html");
-        // });
-        
     } 
     else if($(this).text()=="Our Projects")
     {        
         animation();
+        navTrans();     
+        $(this).addClass("projects-active active");
+
         setTimeout(function(){
             $("#body").empty();
-
             $("#body").loadTemplate("templates/our-projects.html");
         },1000)
-        // a.addEventListener('animationend', () => {
-        //     console.log("project");
-
-        //     $("#body").loadTemplate("templates/our-projects.html");
-        // });
     } 
     else if($(this).text()=="Lets Work")
     {
         animation();
-        
+        navTrans();     
+        $(this).addClass("work-active active");        
         setTimeout(function(){
-            $("#body").empty();
+            $("#body").empty();            
             $("#body").loadTemplate("templates/lets-work.html");
         },1000)
     }
+    $(this).parent().fadeIn("slow");
 })
 
 function animation(){
@@ -100,3 +93,16 @@ function letswork_exit(){
     $("#map").removeClass('animate__animated animate__fadeIn')
     $("#map").addClass('animate__animated animate__fadeOut')
 }
+
+function navTrans(){
+    if($(".home-active").length>0){
+        $(".nav-items").removeClass("home-active active");
+    }else if($(".service-active").length>0){
+        $(".nav-items").removeClass("service-active active");
+    } else if($(".projects-active").length>0){
+        $(".nav-items").removeClass("projects-active active");
+    } else if($(".work-active").length>0){
+        $(".nav-items").removeClass("work-active active");
+    }
+}
+

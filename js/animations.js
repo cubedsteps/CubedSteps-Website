@@ -17,8 +17,6 @@ $(document).ready(function(){
     // });
 
     $(".testimonial-box").click(function(){
-        console.log($(this));
-
         // $('.testimonial-box').each(function(){
         //     if ($(this).hasClass('testimonial-box-click')){
         //         $(this).removeClass('testimonial-box-click');
@@ -43,13 +41,23 @@ $(document).ready(function(){
         }
     })
 
+    // lets-work-btn-transition
+    $(".work-link-button").click(function(){
+        console.log("asd");
+$("#body").loadTemplate("templates/lets-work.html");
+
+    }
+    )
+
     // services page
     $('.show-more').click(function(){
+        console.log("asd");
         if($(this).hasClass('show-more-click')==false){
             $(this).addClass('show-more-click');
-            $('.service-description').slideToggle();
+            $(this).removeClass('show-more-hover');
         } else if($(this).hasClass('show-more-click')==true){
             $(this).removeClass('show-more-click');
+            $(this).addClass('show-more-hover');
         }
     })
 
