@@ -1,4 +1,6 @@
 $(document).ready(function(){
+console.log($("*"));
+
     var testimonial_box = $(".testimonial-box");
     var why_us_box = $(".why-us-box");    
 
@@ -43,11 +45,9 @@ $(document).ready(function(){
 
     // lets-work-btn-transition
     $(".work-link-button").click(function(){
-        console.log("asd");
-$("#body").loadTemplate("templates/lets-work.html");
+        $("#body").loadTemplate("templates/lets-work.html");
+    })
 
-    }
-    )
 
     // services page
     $('.show-more').click(function(){
