@@ -107,6 +107,12 @@ button {
 #header .col-md-7 #nav-contents .nav-items {
   margin-top: 40px;
   margin-right: 30px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+#header .col-md-7 #nav-contents .nav-items:hover {
+  font-size: 18px;
 }
 
 #header .col-md-7 #nav-contents .active {
@@ -115,6 +121,10 @@ button {
   font-weight: 700;
   position: absolute;
   top: -40px;
+}
+
+#header .col-md-7 #nav-contents .active:hover {
+  font-size: 42px;
 }
 
 #header .col-md-7 #nav-contents .home-active {
@@ -212,6 +222,7 @@ button {
 
 #body #homepage .homepage-left-column div .work-link-button {
   position: relative;
+  left: 0;
   background-color: #ff5e46;
   padding: 15px 30px;
   font-size: 20px;
@@ -220,12 +231,13 @@ button {
   color: white;
   -webkit-box-shadow: -14px 14px 30px 0px rgba(255, 94, 70, 0.5);
   box-shadow: -14px 14px 30px 0px rgba(255, 94, 70, 0.5);
-}
-
-#body #homepage .homepage-left-column div a:hover {
-  background-color: #e6553f;
   -webkit-transition: all .5s;
   transition: all .5s;
+}
+
+#body #homepage .homepage-left-column div .work-link-button:hover {
+  background-color: #e6553f;
+  left: 10px;
 }
 
 #body #homepage .homepage-right-column {
