@@ -1,31 +1,8 @@
 $(document).ready(function(){
-console.log($("*"));
-
     var testimonial_box = $(".testimonial-box");
     var why_us_box = $(".why-us-box");    
 
-    //left-side transitions
-    // testimonial_box.each(function(){
-    //     $(this).click(function(){
-    //     if($(this).hasClass('testimonial-box-click')==false){            
-    //         $(this).addClass('testimonial-box-click');
-    //         //$('.testimonial-content').addClass('testimonial-content-show');
-    //         $(this + ' .testimonial-content').addClass('testimonial-content-show');
-    //     }else if($(this).hasClass('testimonial-box-click')==true){
-    //         $(this).removeClass('testimonial-box-click');
-    //         $('.testimonial-content').removeClass('testimonial-content-show');
-    //     }
-    //     })
-    // });
-
     $(".testimonial-box").click(function(){
-        // $('.testimonial-box').each(function(){
-        //     if ($(this).hasClass('testimonial-box-click')){
-        //         $(this).removeClass('testimonial-box-click');
-        //         $(this).removeClass('testimonial-content-show');
-        //     }
-        // })
-
         $(this).toggleClass('testimonial-box-click');
         $(this).find('.testimonial-content').toggleClass('testimonial-content-show');
     })
@@ -43,14 +20,12 @@ console.log($("*"));
         }
     })
 
-    // lets-work-btn-transition
-    $(".work-link-button").click(function(){
-        $("#body").loadTemplate("templates/lets-work.html");
-    })
 
+
+    
 
     // services page
-    $('.show-more').click(function(){
+    $(document).on('click', '.show-more', function(){
         console.log("asd");
         if($(this).hasClass('show-more-click')==false){
             $(this).addClass('show-more-click');
@@ -60,6 +35,44 @@ console.log($("*"));
             $(this).addClass('show-more-hover');
         }
     })
+
+
+
+    // lets-work-btn-transition
+    $(document).on('click', '.work-link-button',function(){
+        animation();
+        navTrans();     
+        $(this).addClass("work-active active");        
+        setTimeout(function(){
+            $("#body").empty();            
+            $("#body").loadTemplate("templates/lets-work.html");
+        },1000)
+    })
+
+    
+    function animation(){
+        if($("#homepage").length){
+            homepage_exit();
+            a = document.querySelector('.homepage-left-column');
+        }
+    }
+    
+    function homepage_exit(){
+        $(".homepage-left-column").removeClass('animate__animated animate__rotateInDownLeft')
+        $(".homepage-left-column").addClass('animate__animated animate__rotateOutDownLeft')
+        $(".homepage-right-column").removeClass('animate__animated animate__rotateInUpRight')
+        $(".homepage-right-column").addClass('animate__animated animate__rotateOutUpRight')
+    }
+    
+    function navTrans(){
+        console.log($('.nav-items'));
+        if($(".home-active").length>0){
+            $(".nav-items").removeClass("home-active active");
+        }
+        $('.nav-items:nth-child(4)').addClass("work-active active")
+    }
+    
+    
 
 })
 

@@ -459,6 +459,12 @@ button {
   #header .col-md-7 #nav-contents .service-active {
     left: 25%;
   }
+  #header .col-md-7 #nav-contents .projects-active {
+    left: 25%;
+  }
+  #header .col-md-7 #nav-contents .work-active {
+    left: 25%;
+  }
   #homepage .homepage-left-column {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
