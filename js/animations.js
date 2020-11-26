@@ -22,16 +22,19 @@ $(document).ready(function(){
 
 
 
-    
+
 
     // services page
     $(document).on('click', '.show-more', function(){
-        console.log("asd");
         if($(this).hasClass('show-more-click')==false){
             $(this).addClass('show-more-click');
+            $('.show-more-text').text('Show less');
+            $('.show-more-text').append('<i class="fas fa-angle-down"></i>');
             $(this).removeClass('show-more-hover');
         } else if($(this).hasClass('show-more-click')==true){
             $(this).removeClass('show-more-click');
+            $('.show-more-text').text('Show more');
+            $('.show-more-text').append('<i class="fas fa-angle-up"></i>');
             $(this).addClass('show-more-hover');
         }
     })

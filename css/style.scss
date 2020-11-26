@@ -253,11 +253,20 @@ button{
                 background-color: $primary_color;
                 padding: 10px; 
                 position: relative;
-                transition: all 0.3s ;                 
+                transition: all 0.3s ;    
+                
+                .show-more-text{
+                    i{
+                        position: relative;
+                        left: 20px;
+                        top: 5px;
+                        font-size: 25px;
+                    }
+                }
             }
 
             .show-more-hover{
-                top: 41px;          
+                top: 40px;          
             }
 
             .service-box:hover{
@@ -265,7 +274,7 @@ button{
                 -moz-box-shadow:    -15px 26px 30px 0px rgba(255, 94, 70, 0.2);
                 box-shadow:         -15px 26px 30px 0px rgba(255, 94, 70, 0.2);
                 .show-more-hover{
-                    top: 0px;
+                    top: -10px;
                     cursor: pointer;
                     opacity: 1;
                 }
@@ -279,7 +288,8 @@ button{
             }
 
             .service-description{
-                margin-top: 10px;
+                margin-top: 30px;
+                text-align: justify;
             }
         }
     }
