@@ -243,7 +243,7 @@ button{
     }
 
     #services{
-        margin: 50px 0;
+        margin-top: 50px;
         .row{
             .service-box{
                 overflow: hidden;
@@ -368,7 +368,11 @@ button{
                 color: rgb(255, 131, 234);
             }
 
-            .mail, .instagram, .phone-number, .facebook, .medium{
+            .fa-linkedin-in{
+                color: rgb(50, 115, 255);
+            }
+
+            .mail, .instagram, .phone-number, .facebook, .medium, .linkedin{
                 margin-top: 50px;
             }
         }
@@ -440,6 +444,10 @@ button{
         width: 300px;   
         padding: 20px;
     }
+}
+
+#footer{
+    padding: 20px;
 }
 
 @media only screen and (max-width: 768px){

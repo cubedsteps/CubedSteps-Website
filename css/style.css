@@ -258,7 +258,7 @@ button {
 }
 
 #body #services {
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 #body #services .row .service-box {
@@ -396,7 +396,11 @@ button {
   color: #ff83ea;
 }
 
-#body #lets-work #contact-us .mail, #body #lets-work #contact-us .instagram, #body #lets-work #contact-us .phone-number, #body #lets-work #contact-us .facebook, #body #lets-work #contact-us .medium {
+#body #lets-work #contact-us .fa-linkedin-in {
+  color: #3273ff;
+}
+
+#body #lets-work #contact-us .mail, #body #lets-work #contact-us .instagram, #body #lets-work #contact-us .phone-number, #body #lets-work #contact-us .facebook, #body #lets-work #contact-us .medium, #body #lets-work #contact-us .linkedin {
   margin-top: 50px;
 }
 
@@ -467,6 +471,10 @@ button {
   box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
   height: 350px;
   width: 300px;
+  padding: 20px;
+}
+
+#footer {
   padding: 20px;
 }
 
