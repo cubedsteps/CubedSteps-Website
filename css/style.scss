@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 //defining variables
 $h1: 50px;
@@ -259,21 +260,23 @@ button{
                 }
             }
 
+            .show-more-btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .show-more-arrow{
+                    margin-left: 20px;
+                    font-size: 22px;
+                    transition: 0.3s all;
+                }
+            }
+
             .show-more{
                 opacity: 0;
                 background-color: $primary_color;
                 padding: 10px; 
                 position: relative;
                 transition: all 0.3s ;    
-                
-                .show-more-text{
-                    i{
-                        position: relative;
-                        left: 20px;
-                        top: 5px;
-                        font-size: 25px;
-                    }
-                }
             }
 
             .show-more-hover{
@@ -393,27 +396,34 @@ button{
         -moz-box-shadow:    0px 15px 30px 0px rgba(163, 159, 159, 0.75);
         box-shadow:         0px 15px 30px 0px rgba(163, 159, 159, 0.75);
         height: 70px;
-        width: 80px;
+        width: 90px;
         transition: 0.5s all;
         padding: 5px;
 
         .why-us-heading{
-            margin: 19px 0 0 10px;
-            font-size: 14px;
+            margin: 20px 0 0 10px;
+            font-family: 'Courgette', cursive;
         }
 
         .why-us-all-contents{
             display: none;
+            h6{
+            font-family: 'Courgette', cursive;
+
+            }
             .why-us-content{
                 padding: 20px;
-                text-align: center;
+                text-align: left;
                 i{
                     padding: 10px;
                     font-size: 30px;
                 }
             }
-        }
-        
+        }        
+    }
+
+    .why-us-box:hover{
+        background-color: $primary-hover-color;
     }
 
     .why-us-box-click{

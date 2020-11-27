@@ -4,8 +4,11 @@ $(document).ready(function(){
 
     $(".testimonial-box").click(function(){
         $(this).toggleClass('testimonial-box-click');
-        $(this).find('.testimonial-content').toggleClass('testimonial-content-show');
+        $(document).find('.testimonial-content').toggleClass('testimonial-content-show');
+
     })
+
+    
 
     //why-us transition
     why_us_box.click(function(){
@@ -29,13 +32,13 @@ $(document).ready(function(){
         if($(this).hasClass('show-more-click')==false){
             $(this).addClass('show-more-click');
             $('.show-more-text').text('Show less');
-            $('.show-more-text').append('<i class="fas fa-angle-down"></i>');
+            $('.show-more-arrow').css('transform', 'rotate(180deg)');
             $(this).removeClass('show-more-hover');
         } else if($(this).hasClass('show-more-click')==true){
             $(this).removeClass('show-more-click');
             $('.show-more-text').text('Show more');
-            $('.show-more-text').append('<i class="fas fa-angle-up"></i>');
             $(this).addClass('show-more-hover');
+            $('.show-more-arrow').css('transform', 'rotate(0deg)');
         }
     })
 

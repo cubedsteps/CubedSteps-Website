@@ -1,6 +1,5 @@
 
 $(document).on('click','.nav-items',function(){
-    $(this).parent().fadeOut("slow");
     let a;
     if($(this).text()=="Home"){
         animation();
@@ -43,7 +42,6 @@ $(document).on('click','.nav-items',function(){
             $("#body").loadTemplate("templates/lets-work.html");
         },1000)
     }
-    $(this).parent().fadeIn("slow");
 })
 
 function animation(){
