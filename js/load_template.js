@@ -1,2 +1,2 @@
 $("#header").loadTemplate("templates/header.html");
-$("#body").loadTemplate("templates/lets-work.html");
+$("#body").loadTemplate("templates/homepage.html");
