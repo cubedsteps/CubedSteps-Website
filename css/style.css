@@ -198,8 +198,16 @@ button {
   display: none;
 }
 
+#left-side .testimonial-items .testimonial-content h4, #left-side .testimonial-items .testimonial-content p {
+  opacity: 0;
+}
+
 #left-side .testimonial-items .testimonial-content-show {
   display: block;
+}
+
+#left-side .testimonial-items .testimonial-content-show h4, #left-side .testimonial-items .testimonial-content-show p {
+  opacity: 1;
 }
 
 #body #homepage .homepage-left-column {
@@ -451,7 +459,7 @@ button {
 }
 
 #right-side .why-us-box .why-us-all-contents .why-us-content {
-  padding: 20px;
+  padding-top: 15px;
   text-align: left;
 }
 
@@ -469,7 +477,7 @@ button {
   border-bottom-left-radius: 20px;
   -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
   box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
-  height: 350px;
+  height: 355px;
   width: 300px;
   padding: 20px;
 }

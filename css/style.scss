@@ -187,10 +187,16 @@ button{
 
         .testimonial-content{
             display: none;
+            h4,p{
+                opacity: 0;
+            }
         }
 
         .testimonial-content-show{
             display: block;
+            h4,p{
+                opacity: 1;
+            }
         }
     }
 }
@@ -420,7 +426,7 @@ button{
 
             }
             .why-us-content{
-                padding: 20px;
+                padding-top: 15px;
                 text-align: left;
                 i{
                     padding: 10px;
@@ -440,7 +446,7 @@ button{
         -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
         -moz-box-shadow:    0px 15px 30px 0px rgba(255, 94, 70, 0.75);
         box-shadow:         0px 15px 30px 0px rgba(255, 94, 70, 0.75);
-        height: 350px;
+        height: 355px;
         width: 300px;   
         padding: 20px;
     }
