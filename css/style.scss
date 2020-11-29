@@ -163,6 +163,7 @@ button{
             padding: 5px; 
             border-top-right-radius: 50%;
             border-bottom-right-radius: 50%;
+            opacity: 0.7;
         }
     
         .testimonial-box-click{
@@ -175,6 +176,7 @@ button{
             height: 230px;
             width: 300px;   
             padding: 20px;
+            opacity: 1;
         }
 
         .image{
@@ -183,6 +185,9 @@ button{
             background-color: rgb(71, 71, 71);
             border-radius: 50%;
             float: right;
+            background-image: url('../images/testimonials/person-1.jpg');
+            background-size: cover;
+            background-position: center;
         }
 
         .testimonial-content{
@@ -399,6 +404,7 @@ button{
     position: relative;
     padding-right: 0px;
     .why-us-box{
+        opacity: .7;
         background-color: $primary_color;
         position: fixed;
         float: right;
@@ -438,6 +444,7 @@ button{
 
     .why-us-box:hover{
         background-color: $primary-hover-color;
+        opacity: 1;
     }
 
     .why-us-box-click{
@@ -449,11 +456,15 @@ button{
         height: 355px;
         width: 300px;   
         padding: 20px;
+        opacity: 1;
     }
 }
 
 #footer{
     padding: 20px;
+    p{
+        color: rgb(145, 145, 145);
+    }
 }
 
 @media only screen and (max-width: 768px){
