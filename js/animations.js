@@ -47,14 +47,14 @@ $(document).ready(function(){
     $(document).on('click', '.show-more', function(){
         if($(this).hasClass('show-more-click')==false){
             $(this).addClass('show-more-click');
-            $('.show-more-text').text('Show less');
-            $('.show-more-arrow').css('transform', 'rotate(180deg)');
+            $(this).find('.show-more-text').text('Show less');
+            $(this).find('.show-more-arrow').css('transform', 'rotate(180deg)');
             $(this).removeClass('show-more-hover');
         } else if($(this).hasClass('show-more-click')==true){
             $(this).removeClass('show-more-click');
-            $('.show-more-text').text('Show more');
+            $(this).find('.show-more-text').text('Show more');
             $(this).addClass('show-more-hover');
-            $('.show-more-arrow').css('transform', 'rotate(0deg)');
+            $(this).find('.show-more-arrow').css('transform', 'rotate(0deg)');
         }
     })
 

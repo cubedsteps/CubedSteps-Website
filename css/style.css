@@ -176,6 +176,11 @@ button {
   opacity: 0.7;
 }
 
+#left-side .testimonial-items .testimonial-box:hover {
+  opacity: 1;
+  background-color: #e6553f;
+}
+
 #left-side .testimonial-items .testimonial-box-click {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -584,14 +589,14 @@ button {
   #header {
     padding: 0px;
   }
-  #header .col-md-7 {
-    margin-top: 30px;
-  }
   #header .col-md-7 #nav-contents .nav-items {
     font-size: 14px;
   }
   #header .col-md-7 #nav-contents .active {
-    font-size: 30px;
+    font-size: 30px !important;
+  }
+  #header .col-md-7 #nav-contents .projects-active {
+    right: -100px !important;
   }
   #right-side .why-us-box {
     top: 285px;
