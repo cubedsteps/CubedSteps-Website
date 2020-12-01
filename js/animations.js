@@ -1,11 +1,31 @@
+
 $(document).ready(function(){
     var testimonial_box = $(".testimonial-box");
     var why_us_box = $(".why-us-box");    
 
     $(".testimonial-box").click(function(){
-        $(this).toggleClass('testimonial-box-click');
-        $(this).find('.testimonial-content').toggleClass('testimonial-content-show');
+        // debugger;
+        for (var i = 0; i<testimonial_box.length; i++){
+            testimonial_box[i].setAttribute("data-clicked", "false");
+        }
+        // debugger;
+        $(this).attr("data-clicked","true");
+        for (var i = 0; i<testimonial_box.length; i++){
+            if(testimonial_box[i].getAttribute("data-clicked")==="true"){                
+                console.log("qwe")
+                $(testimonial_box[i]).toggleClass('testimonial-box-click');
+                $(testimonial_box[i]).find('.testimonial-content').toggleClass('testimonial-content-show');
+            }else{
+                console.log("asdasd")
+                $(testimonial_box[i]).removeClass('testimonial-box-click');
+                $(testimonial_box[i]).find('.testimonial-content').removeClass('testimonial-content-show');
+            }
+            // $(testimonial_box[i]).toggleClass('testimonial-box-click');
+            // $(testimonial_box[i]).find('.testimonial-content').toggleClass('testimonial-content-show');
+        }
     })
+
+    
 
     //why-us transition
     why_us_box.click(function(){
@@ -28,14 +48,14 @@ $(document).ready(function(){
     $(document).on('click', '.show-more', function(){
         if($(this).hasClass('show-more-click')==false){
             $(this).addClass('show-more-click');
-            $('.show-more-text').text('Show less');
-            $('.show-more-text').append('<i class="fas fa-angle-down"></i>');
+            $(this).find('.show-more-text').text('Show less');
+            $(this).find('.show-more-arrow').css('transform', 'rotate(180deg)');
             $(this).removeClass('show-more-hover');
         } else if($(this).hasClass('show-more-click')==true){
             $(this).removeClass('show-more-click');
-            $('.show-more-text').text('Show more');
-            $('.show-more-text').append('<i class="fas fa-angle-up"></i>');
+            $(this).find('.show-more-text').text('Show more');
             $(this).addClass('show-more-hover');
+            $(this).find('.show-more-arrow').css('transform', 'rotate(0deg)');
         }
     })
 

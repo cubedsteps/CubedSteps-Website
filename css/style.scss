@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 //defining variables
 $h1: 50px;
@@ -126,12 +127,12 @@ button{
             }
 
             .projects-active{
-                left: 20px;
-                width: 260px;
+                left: 0px;
+                width: 300px;
             }
 
             .work-active{
-                left: 50px;
+                left: 30px;
                 width: 260px;
             }
     
@@ -162,6 +163,12 @@ button{
             padding: 5px; 
             border-top-right-radius: 50%;
             border-bottom-right-radius: 50%;
+            opacity: 0.7;
+        }
+
+        .testimonial-box:hover{
+            opacity: 1;
+            background-color: $primary-hover-color;
         }
     
         .testimonial-box-click{
@@ -174,6 +181,7 @@ button{
             height: 230px;
             width: 300px;   
             padding: 20px;
+            opacity: 1;
         }
 
         .image{
@@ -182,14 +190,23 @@ button{
             background-color: rgb(71, 71, 71);
             border-radius: 50%;
             float: right;
+            background-image: url('https://res.cloudinary.com/cubedsteps/image/upload/v1606818213/cubedsteps-site-images/person-1_xhz8xb.jpg');
+            background-size: cover;
+            background-position: center;
         }
 
         .testimonial-content{
             display: none;
+            h4,p{
+                opacity: 0;
+            }
         }
 
         .testimonial-content-show{
             display: block;
+            h4,p{
+                opacity: 1;
+            }
         }
     }
 }
@@ -242,7 +259,7 @@ button{
     }
 
     #services{
-        margin: 50px 0;
+        margin-top: 50px;
         .row{
             .service-box{
                 overflow: hidden;
@@ -259,21 +276,23 @@ button{
                 }
             }
 
+            .show-more-btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .show-more-arrow{
+                    margin-left: 20px;
+                    font-size: 22px;
+                    transition: 0.3s all;
+                }
+            }
+
             .show-more{
                 opacity: 0;
                 background-color: $primary_color;
                 padding: 10px; 
                 position: relative;
                 transition: all 0.3s ;    
-                
-                .show-more-text{
-                    i{
-                        position: relative;
-                        left: 20px;
-                        top: 5px;
-                        font-size: 25px;
-                    }
-                }
             }
 
             .show-more-hover{
@@ -310,7 +329,8 @@ button{
             .project-box{
                 height: 272px;
                 background-position: center;
-                background-size: contain;
+                background-size: cover;
+                background-repeat: none;
                 position: relative;
                 padding: 20px;
                 overflow: hidden;
@@ -364,7 +384,11 @@ button{
                 color: rgb(255, 131, 234);
             }
 
-            .mail, .instagram, .phone-number, .facebook, .medium{
+            .fa-linkedin-in{
+                color: rgb(50, 115, 255);
+            }
+
+            .mail, .instagram, .phone-number, .facebook, .medium, .linkedin{
                 margin-top: 50px;
             }
         }
@@ -373,6 +397,9 @@ button{
             iframe{
                 width: 100%;
                 height: 347px;
+                -webkit-box-shadow: -15px 26px 30px 0px rgba(0, 0, 0, 0.2);
+                -moz-box-shadow:    -15px 26px 30px 0px rgba(0, 0, 0, 0.2);
+                box-shadow:         -15px 26px 30px 0px rgba(0, 0, 0, 0.2);
             }
         }
     }
@@ -382,6 +409,7 @@ button{
     position: relative;
     padding-right: 0px;
     .why-us-box{
+        opacity: .7;
         background-color: $primary_color;
         position: fixed;
         float: right;
@@ -393,27 +421,35 @@ button{
         -moz-box-shadow:    0px 15px 30px 0px rgba(163, 159, 159, 0.75);
         box-shadow:         0px 15px 30px 0px rgba(163, 159, 159, 0.75);
         height: 70px;
-        width: 80px;
+        width: 90px;
         transition: 0.5s all;
         padding: 5px;
 
         .why-us-heading{
-            margin: 19px 0 0 10px;
-            font-size: 14px;
+            margin: 20px 0 0 10px;
+            font-family: 'Courgette', cursive;
         }
 
         .why-us-all-contents{
             display: none;
+            h6{
+            font-family: 'Courgette', cursive;
+
+            }
             .why-us-content{
-                padding: 20px;
-                text-align: center;
+                padding-top: 15px;
+                text-align: left;
                 i{
                     padding: 10px;
                     font-size: 30px;
                 }
             }
-        }
-        
+        }        
+    }
+
+    .why-us-box:hover{
+        background-color: $primary-hover-color;
+        opacity: 1;
     }
 
     .why-us-box-click{
@@ -422,9 +458,17 @@ button{
         -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
         -moz-box-shadow:    0px 15px 30px 0px rgba(255, 94, 70, 0.75);
         box-shadow:         0px 15px 30px 0px rgba(255, 94, 70, 0.75);
-        height: 350px;
+        height: 355px;
         width: 300px;   
         padding: 20px;
+        opacity: 1;
+    }
+}
+
+#footer{
+    padding: 20px;
+    p{
+        color: rgb(145, 145, 145);
     }
 }
 
@@ -486,6 +530,12 @@ button{
         }     
     }
 
+    #lets-work{
+        .phone-number, .mail, .facebook, .instagram, .medium, .linkedin{
+            justify-content: center;
+        }
+    }
+
 }
 
 @media only screen and (max-width: 400px){
@@ -503,14 +553,17 @@ $x: 1;
     #header {
         padding: 0px;
         .col-md-7 {
-            margin-top: 30px;
             #nav-contents {
                 .nav-items{
                     font-size: 14px;    
                 }
                 .active {
-                    font-size: 30px;
-                }  
+                    font-size: 30px !important;
+                } 
+                
+                .projects-active{
+                    right: -100px !important;
+                }
                 
                 
             }

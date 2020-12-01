@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -136,12 +137,12 @@ button {
 }
 
 #header .col-md-7 #nav-contents .projects-active {
-  left: 20px;
-  width: 260px;
+  left: 0px;
+  width: 300px;
 }
 
 #header .col-md-7 #nav-contents .work-active {
-  left: 50px;
+  left: 30px;
   width: 260px;
 }
 
@@ -172,6 +173,12 @@ button {
   padding: 5px;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
+  opacity: 0.7;
+}
+
+#left-side .testimonial-items .testimonial-box:hover {
+  opacity: 1;
+  background-color: #e6553f;
 }
 
 #left-side .testimonial-items .testimonial-box-click {
@@ -183,6 +190,7 @@ button {
   height: 230px;
   width: 300px;
   padding: 20px;
+  opacity: 1;
 }
 
 #left-side .testimonial-items .image {
@@ -191,14 +199,25 @@ button {
   background-color: #474747;
   border-radius: 50%;
   float: right;
+  background-image: url("https://res.cloudinary.com/cubedsteps/image/upload/v1606818213/cubedsteps-site-images/person-1_xhz8xb.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 #left-side .testimonial-items .testimonial-content {
   display: none;
 }
 
+#left-side .testimonial-items .testimonial-content h4, #left-side .testimonial-items .testimonial-content p {
+  opacity: 0;
+}
+
 #left-side .testimonial-items .testimonial-content-show {
   display: block;
+}
+
+#left-side .testimonial-items .testimonial-content-show h4, #left-side .testimonial-items .testimonial-content-show p {
+  opacity: 1;
 }
 
 #body #homepage .homepage-left-column {
@@ -257,7 +276,7 @@ button {
 }
 
 #body #services {
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 #body #services .row .service-box {
@@ -277,6 +296,25 @@ button {
   height: 138px;
 }
 
+#body #services .row .show-more-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#body #services .row .show-more-btn .show-more-arrow {
+  margin-left: 20px;
+  font-size: 22px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
 #body #services .row .show-more {
   opacity: 0;
   background-color: #ff5e46;
@@ -284,13 +322,6 @@ button {
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-}
-
-#body #services .row .show-more .show-more-text i {
-  position: relative;
-  left: 20px;
-  top: 5px;
-  font-size: 25px;
 }
 
 #body #services .row .show-more-hover {
@@ -323,7 +354,8 @@ button {
 #body #projects .row .project-box {
   height: 272px;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: none;
   position: relative;
   padding: 20px;
   overflow: hidden;
@@ -382,7 +414,11 @@ button {
   color: #ff83ea;
 }
 
-#body #lets-work #contact-us .mail, #body #lets-work #contact-us .instagram, #body #lets-work #contact-us .phone-number, #body #lets-work #contact-us .facebook, #body #lets-work #contact-us .medium {
+#body #lets-work #contact-us .fa-linkedin-in {
+  color: #3273ff;
+}
+
+#body #lets-work #contact-us .mail, #body #lets-work #contact-us .instagram, #body #lets-work #contact-us .phone-number, #body #lets-work #contact-us .facebook, #body #lets-work #contact-us .medium, #body #lets-work #contact-us .linkedin {
   margin-top: 50px;
 }
 
@@ -393,6 +429,8 @@ button {
 #body #lets-work #map iframe {
   width: 100%;
   height: 347px;
+  -webkit-box-shadow: -15px 26px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -15px 26px 30px 0px rgba(0, 0, 0, 0.2);
 }
 
 #right-side {
@@ -401,6 +439,7 @@ button {
 }
 
 #right-side .why-us-box {
+  opacity: .7;
   background-color: #ff5e46;
   position: fixed;
   float: right;
@@ -411,24 +450,28 @@ button {
   -webkit-box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
   box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
   height: 70px;
-  width: 80px;
+  width: 90px;
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
   padding: 5px;
 }
 
 #right-side .why-us-box .why-us-heading {
-  margin: 19px 0 0 10px;
-  font-size: 14px;
+  margin: 20px 0 0 10px;
+  font-family: 'Courgette', cursive;
 }
 
 #right-side .why-us-box .why-us-all-contents {
   display: none;
 }
 
+#right-side .why-us-box .why-us-all-contents h6 {
+  font-family: 'Courgette', cursive;
+}
+
 #right-side .why-us-box .why-us-all-contents .why-us-content {
-  padding: 20px;
-  text-align: center;
+  padding-top: 15px;
+  text-align: left;
 }
 
 #right-side .why-us-box .why-us-all-contents .why-us-content i {
@@ -436,14 +479,28 @@ button {
   font-size: 30px;
 }
 
+#right-side .why-us-box:hover {
+  background-color: #e6553f;
+  opacity: 1;
+}
+
 #right-side .why-us-box-click {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
   box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
-  height: 350px;
+  height: 355px;
   width: 300px;
   padding: 20px;
+  opacity: 1;
+}
+
+#footer {
+  padding: 20px;
+}
+
+#footer p {
+  color: #919191;
 }
 
 @media only screen and (max-width: 768px) {
@@ -497,6 +554,11 @@ button {
   #homepage .homepage-left-column div h1 span {
     color: #ff5e46;
   }
+  #lets-work .phone-number, #lets-work .mail, #lets-work .facebook, #lets-work .instagram, #lets-work .medium, #lets-work .linkedin {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -527,14 +589,14 @@ button {
   #header {
     padding: 0px;
   }
-  #header .col-md-7 {
-    margin-top: 30px;
-  }
   #header .col-md-7 #nav-contents .nav-items {
     font-size: 14px;
   }
   #header .col-md-7 #nav-contents .active {
-    font-size: 30px;
+    font-size: 30px !important;
+  }
+  #header .col-md-7 #nav-contents .projects-active {
+    right: -100px !important;
   }
   #right-side .why-us-box {
     top: 285px;
