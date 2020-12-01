@@ -1,1 +1,0 @@
-$("#footer").loadTemplate("templates/footer.html");

@@ -199,7 +199,7 @@ button {
   background-color: #474747;
   border-radius: 50%;
   float: right;
-  background-image: url("../images/testimonials/person-1.jpg");
+  background-image: url("https://res.cloudinary.com/cubedsteps/image/upload/v1606818213/cubedsteps-site-images/person-1_xhz8xb.jpg");
   background-size: cover;
   background-position: center;
 }

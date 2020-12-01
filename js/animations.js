@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     var testimonial_box = $(".testimonial-box");
     var why_us_box = $(".why-us-box");    

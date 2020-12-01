@@ -190,7 +190,7 @@ button{
             background-color: rgb(71, 71, 71);
             border-radius: 50%;
             float: right;
-            background-image: url('../images/testimonials/person-1.jpg');
+            background-image: url('https://res.cloudinary.com/cubedsteps/image/upload/v1606818213/cubedsteps-site-images/person-1_xhz8xb.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -467,7 +467,6 @@ button{
 
 #footer{
     padding: 20px;
-    
     p{
         color: rgb(145, 145, 145);
     }

@@ -9,6 +9,9 @@ $(document).on('click','.nav-items',function(){
             $("#body").empty();
             $("#body").loadTemplate("templates/homepage.html");
         },1000)
+        setTimeout(function(){
+            $("#footer").loadTemplate("templates/footer.html");
+        },2000)
     } 
     else if($(this).text()=="Services")
     {
@@ -19,7 +22,10 @@ $(document).on('click','.nav-items',function(){
         setTimeout(function(){
             $("#body").empty();
             $("#body").loadTemplate("templates/services.html");
-        },1000)
+        },1000)        
+        setTimeout(function(){
+            $("#footer").loadTemplate("templates/footer.html");
+        },2000)
     } 
     else if($(this).text()=="Our Projects")
     {        
@@ -30,7 +36,10 @@ $(document).on('click','.nav-items',function(){
         setTimeout(function(){
             $("#body").empty();
             $("#body").loadTemplate("templates/our-projects.html");
-        },1000)
+        },1000)        
+        setTimeout(function(){
+            $("#footer").loadTemplate("templates/footer.html");
+        },2000)
     } 
     else if($(this).text()=="Lets Work")
     {
@@ -40,7 +49,10 @@ $(document).on('click','.nav-items',function(){
         setTimeout(function(){
             $("#body").empty();            
             $("#body").loadTemplate("templates/lets-work.html");
-        },1000)
+        },1000)        
+        setTimeout(function(){
+            $("#footer").loadTemplate("templates/footer.html");
+        },2000)
     }
 })
 
