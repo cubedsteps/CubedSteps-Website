@@ -62,6 +62,10 @@ p, a {
   text-decoration: none;
 }
 
+.white {
+  color: #FFFFFF;
+}
+
 button {
   background-color: #ff5e46;
   color: white;
@@ -73,7 +77,7 @@ button {
   height: 211px;
 }
 
-#header .col-lg-4 {
+#header .col-md-4 {
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
@@ -81,67 +85,100 @@ button {
           align-items: center;
 }
 
-#header .col-lg-8 {
+#header .col-md-4 #logo {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#header .col-md-4 #logo img {
+  height: 68px;
+}
+
+#header .col-md-5 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#header #nav-contents {
+#header .col-md-5 #nav-contents {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-#header #nav-contents .nav-items {
-  margin: 0 25px 0 25px;
   position: relative;
-  top: 40px;
-  right: 160px;
 }
 
-#header #nav-contents .active {
+#header .col-md-5 #nav-contents .nav-items {
+  margin: 0 25px 0 25px;
+  margin-top: 40px;
+}
+
+#header .col-md-5 #nav-contents .active {
+  margin-top: 0;
   font-size: 40px;
   font-weight: 700;
-  position: relative;
+  position: absolute;
   top: -40px;
-  left: 120px;
+  left: 110px;
 }
 
-.side-box {
+#left-side {
+  position: relative;
+  z-index: 1;
+  padding-left: 0px;
+  padding-top: 50px;
+}
+
+#left-side .testimonial-items {
+  position: fixed;
+}
+
+#left-side .testimonial-items .testimonial-box {
   -webkit-box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
   box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
   margin-bottom: 20px;
   background-color: #FAFAFA;
   height: 60px;
   width: 70px;
-}
-
-.side-box:hover {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
-  background-color: #ff5e46;
-  -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
-  box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
-  height: 200px;
-  width: 300px;
-}
-
-#left-side {
-  z-index: 1;
-  padding-left: 0px;
-}
-
-#left-side .testimonial-box {
+  padding: 5px;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
 }
 
-#left-side .testimonial-box:hover {
+#left-side .testimonial-items .testimonial-box-click {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  background-color: #ff5e46;
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  height: 230px;
+  width: 300px;
+  padding: 20px;
+}
+
+#left-side .testimonial-items .image {
+  height: 50px;
+  width: 50px;
+  background-color: #474747;
+  border-radius: 50%;
+  float: right;
+}
+
+#left-side .testimonial-items .testimonial-content {
+  display: none;
+}
+
+#left-side .testimonial-items .testimonial-content-show {
+  display: block;
 }
 
 #body #homepage .homepage-left-column {
@@ -150,6 +187,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #body #homepage .homepage-left-column div h1 {
@@ -178,64 +218,219 @@ button {
   transition: all .5s;
 }
 
-#body #services .row div {
-  padding: 40px;
-  text-align: center;
-}
-
-#body #services .row div img {
-  height: 138px;
-}
-
-#body #projects .row div {
+#body #homepage .homepage-right-column {
   display: -ms-grid;
   display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 50px;
+}
+
+#body #homepage .homepage-right-column img {
+  max-width: 502px;
+  width: 100%;
+}
+
+#body #services .row .service-box {
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+#body #services .row .service-box .service-content {
+  padding: 20px 0;
+}
+
+#body #services .row .service-box .service-content img {
+  height: 138px;
+}
+
+#body #services .row .show-more-hover {
+  position: relative;
+  top: 45px;
+  background-color: #ff5e46;
+  padding: 10px;
+  -webkit-transition: .3s all;
+  transition: .3s all;
+  opacity: 0;
+}
+
+#body #services .row .show-more-hover .service-description {
+  display: none;
+}
+
+#body #services .row .service-box:hover {
+  -webkit-box-shadow: -15px 26px 30px 0px rgba(255, 94, 70, 0.2);
+  box-shadow: -15px 26px 30px 0px rgba(255, 94, 70, 0.2);
+}
+
+#body #services .row .service-box:hover .show-more-hover {
+  top: 0;
+  cursor: pointer;
+  opacity: 1;
+}
+
+#body #services .row .show-more-click {
+  top: -220px;
+  height: 100%;
+  opacity: 1;
+}
+
+#body #projects .row .project-box {
+  height: 272px;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#body #projects .row .project-box .project-description {
+  position: relative;
+  top: 193px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+#body #projects .row .project-box .project-description h3 {
+  padding-bottom: 10px;
+}
+
+#body #projects .row a:hover {
+  cursor: pointer;
+}
+
+#body #projects .row a:hover .project-description {
+  top: 100px;
 }
 
 #body #projects img {
   height: 178px;
 }
 
-#body #lets-work #contact {
-  display: -ms-grid;
-  display: grid;
+#body #lets-work #contact-us p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-#body #lets-work i {
-  font-size: 45px;
+#body #lets-work #contact-us i {
+  font-size: 36px;
+  margin-right: 10px;
 }
 
-#body #lets-work .fa-facebook-square {
-  color: #4646FF;
+#body #lets-work #contact-us .fa-phone-alt {
+  color: #4aad4a;
 }
 
-#body #lets-work .fa-envelope {
-  color: #AAAAAA;
+#body #lets-work #contact-us .fa-envelope {
+  color: #a0a0a0;
 }
 
-#body #lets-work .fa-phone-alt {
-  color: #47CD54;
+#body #lets-work #contact-us .fa-facebook-square {
+  color: #3273ff;
+}
+
+#body #lets-work #contact-us .fa-instagram {
+  color: #ff83ea;
+}
+
+#body #lets-work #contact-us .mail, #body #lets-work #contact-us .instagram, #body #lets-work #contact-us .phone-number, #body #lets-work #contact-us .facebook, #body #lets-work #contact-us .medium {
+  margin-top: 50px;
+}
+
+#body #lets-work #map {
+  margin-top: 30px;
+}
+
+#body #lets-work #map iframe {
+  width: 100%;
+  height: 347px;
 }
 
 #right-side {
+  position: relative;
   padding-right: 0px;
+  padding-top: 50px;
 }
 
 #right-side .why-us-box {
+  background-color: #ff5e46;
+  position: fixed;
   float: right;
+  top: 250px;
+  right: 0;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
+  box-shadow: 0px 15px 30px 0px rgba(163, 159, 159, 0.75);
+  height: 70px;
+  width: 80px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  padding: 5px;
 }
 
-#right-side .why-us-box:hover {
+#right-side .why-us-box .why-us-heading {
+  margin-top: 17px;
+  text-align: center;
+}
+
+#right-side .why-us-box .why-us-all-contents {
+  display: none;
+}
+
+#right-side .why-us-box .why-us-all-contents .why-us-content {
+  padding: 20px;
+  text-align: center;
+}
+
+#right-side .why-us-box .why-us-all-contents .why-us-content i {
+  padding: 10px;
+  font-size: 30px;
+}
+
+#right-side .why-us-box-click {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
+  height: 350px;
+  width: 300px;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  #all-contents {
+    margin-top: 30px;
+  }
+  #header .col-md-5 {
+    margin-top: 60px;
+  }
+  #homepage .homepage-left-column {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #homepage .homepage-left-column div h1 {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  #homepage .homepage-left-column div h1 span {
+    color: #ff5e46;
+  }
+  #lets-work #contact-us p {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

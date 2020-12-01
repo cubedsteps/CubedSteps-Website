@@ -1,10 +1,10 @@
 var nav_contents = [{
     name: "Home",
-    class_name: "active"
+    class_name: ""
 },
 {
     name: 'Services',
-    class_name: ""
+    class_name: "active"
 
 },
 {
