@@ -1,9 +1,9 @@
 
 $(document).ready(function(){
     var testimonial_box = $(".testimonial-box");
-    var why_us_box = $(".why-us-box");    
+    var why_us_box = $(".why-us-box");   
 
-    $(".testimonial-box").click(function(){
+    $(document).on('click','.testimonial-box',function(){
         // debugger;
         for (var i = 0; i<testimonial_box.length; i++){
             testimonial_box[i].setAttribute("data-clicked", "false");
