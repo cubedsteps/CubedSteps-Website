@@ -26,10 +26,6 @@ $bg-color: #FAFAFA;
     box-sizing: border-box;
 }
 
-:root {
-    --animate-delay: 0.5s;
-  }
-
 body{
     background-color: $bg-color;
     overflow-x: hidden;
