@@ -7,10 +7,6 @@
           box-sizing: border-box;
 }
 
-:root {
-  --animate-delay: 0.5s;
-}
-
 body {
   background-color: #FAFAFA;
   overflow-x: hidden;
