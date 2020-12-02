@@ -1,4 +1,12 @@
 
+$(document).on('click', '.logo_img', function(){
+    animation();
+    setTimeout(function(){
+        $("#body").empty();
+        $("#body").loadTemplate("templates/homepage.html");
+    },1000)
+})
+
 $(document).on('click','.nav-items',function(){
     let a;
     if($(this).text()=="Home"){
