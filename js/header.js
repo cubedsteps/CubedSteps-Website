@@ -9,19 +9,16 @@ $(document).on('click', '.logo_img', function(){
 
 $(document).on('click','.nav-items',function(){
     let a;
-    if($(this).text()=="Home"){
+    if($(this).text()==HOME){
         animation();
         navTrans();     
         $(this).addClass("home-active active");
         setTimeout(function(){
             $("#body").empty();
-            $("#body").loadTemplate("templates/homepage.html");
+            loadTemplate("homepage.html", {});
         },1000)
-        setTimeout(function(){
-            $("#footer").loadTemplate("templates/footer.html");
-        },2000)
     } 
-    else if($(this).text()=="Services")
+    else if($(this).text()==SERVICES)
     {
         animation();
         navTrans();     
@@ -29,13 +26,10 @@ $(document).on('click','.nav-items',function(){
 
         setTimeout(function(){
             $("#body").empty();
-            $("#body").loadTemplate("templates/services.html");
-        },1000)        
-        setTimeout(function(){
-            $("#footer").loadTemplate("templates/footer.html");
-        },2000)
+            loadTemplate("services.html", {});
+        },1000) 
     } 
-    else if($(this).text()=="Our Projects")
+    else if($(this).text()==PROJECTS)
     {        
         animation();
         navTrans();     
@@ -43,24 +37,18 @@ $(document).on('click','.nav-items',function(){
 
         setTimeout(function(){
             $("#body").empty();
-            $("#body").loadTemplate("templates/our-projects.html");
-        },1000)        
-        setTimeout(function(){
-            $("#footer").loadTemplate("templates/footer.html");
-        },2000)
+            loadTemplate("our-projects.html", {});
+        },1000)   
     } 
-    else if($(this).text()=="Lets Work")
+    else if($(this).text()==WORK)
     {
         animation();
         navTrans();     
         $(this).addClass("work-active active");        
         setTimeout(function(){
             $("#body").empty();            
-            $("#body").loadTemplate("templates/lets-work.html");
-        },1000)        
-        setTimeout(function(){
-            $("#footer").loadTemplate("templates/footer.html");
-        },2000)
+            loadTemplate("lets-work.html", {});
+        },1000)  
     }
 })
 
@@ -108,6 +96,8 @@ function letswork_exit(){
     $(".instagram").addClass('animate__animated animate__fadeOutRight')
     $(".medium").removeClass('animate__animated animate__fadeInLeft')
     $(".medium").addClass('animate__animated animate__fadeOutRight')
+    $(".linkedin").removeClass('animate__animated animate__fadeInLeft')
+    $(".linkedin").addClass('animate__animated animate__fadeOutRight')
     $("#map").removeClass('animate__animated animate__fadeIn')
     $("#map").addClass('animate__animated animate__fadeOut')
 }
@@ -123,4 +113,3 @@ function navTrans(){
         $(".nav-items").removeClass("work-active active");
     }
 }
-

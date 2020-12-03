@@ -1,17 +1,22 @@
+var HOME = "Home";
+var SERVICES = "Services";
+var PROJECTS = "Our Projects";
+var WORK = "Let's Work";
+
 var nav_contents = [{
-    name: "Home",
+    name: HOME,
     class_name: "home-active active"
 },
 {
-    name: 'Services',
+    name: SERVICES,
     class_name: ""
 },
 {
-    name: 'Our Projects',
+    name: PROJECTS,
     class_name: ""
 },
 {
-    name: 'Lets Work',
+    name: WORK,
     class_name: ""
 
 }]

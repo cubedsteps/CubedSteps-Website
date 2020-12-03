@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+.small-text {
+  font-size: 14px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -188,7 +192,7 @@ button {
   background-color: #ff5e46;
   -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
   box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
-  height: 230px;
+  height: 200px;
   width: 300px;
   padding: 20px;
   opacity: 1;
@@ -335,7 +339,7 @@ button {
 }
 
 #body #services .row .service-box:hover .show-more-hover {
-  top: -10px;
+  top: 0px;
   cursor: pointer;
   opacity: 1;
 }
@@ -444,7 +448,7 @@ button {
   background-color: #ff5e46;
   position: fixed;
   float: right;
-  top: 220px;
+  top: 200px;
   right: 0;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
@@ -491,7 +495,7 @@ button {
   -webkit-box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
   box-shadow: 0px 15px 30px 0px rgba(255, 94, 70, 0.75);
   height: 355px;
-  width: 300px;
+  width: 320px;
   padding: 20px;
   opacity: 1;
 }
@@ -600,13 +604,13 @@ button {
     right: -100px !important;
   }
   #right-side .why-us-box {
-    top: 285px;
+    top: 255px;
   }
   #right-side .why-us-box .why-us-all-contents .why-us-content {
     padding: 10px;
   }
   #right-side .why-us-box-click {
-    height: 260px;
+    height: 335px;
   }
 }
 /*# sourceMappingURL=style.css.map */
