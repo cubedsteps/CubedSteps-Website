@@ -92,9 +92,6 @@ $(document).ready(function(){
         }
         $('.nav-items:nth-child(4)').addClass("work-active active")
     }
-    
-    
-
 })
 
 

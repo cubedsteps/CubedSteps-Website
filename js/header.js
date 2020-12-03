@@ -1,6 +1,8 @@
 
 $(document).on('click', '.logo_img', function(){
     animation();
+    navTrans();      
+    $('.nav-items:nth-child(1)').addClass('home-active active');
     setTimeout(function(){
         $("#body").empty();
         $("#body").loadTemplate("templates/homepage.html");
@@ -8,7 +10,6 @@ $(document).on('click', '.logo_img', function(){
 })
 
 $(document).on('click','.nav-items',function(){
-    let a;
     if($(this).text()==HOME){
         animation();
         navTrans();     
@@ -55,16 +56,12 @@ $(document).on('click','.nav-items',function(){
 function animation(){
     if($("#homepage").length){
         homepage_exit();
-        a = document.querySelector('.homepage-left-column');
     } else if($("#services").length){
         servicepage_exit();
-        a = document.querySelector('.service-box');
     } else if($("#projects").length){
         projectspage_exit();
-        a = document.querySelector('.project-box');
     } else if($("#lets-work").length){
         letswork_exit();
-        a = document.querySelector('.phone-number');
     }
 }
 
