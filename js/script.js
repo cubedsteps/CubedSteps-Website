@@ -1,5 +1,5 @@
-function loadTemplate(template,data) {
-    $("#body").loadTemplate("templates/"+template, {}, {
+function loadTemplate(template,data={}) {
+    $("#body").loadTemplate("templates/"+template, data , {
         success: function(data){
                 load_footer();          
         },

@@ -38,7 +38,7 @@ $(document).on('click','.nav-items',function(){
 
         setTimeout(function(){
             $("#body").empty();
-            loadTemplate("our-projects.html", {});
+            loadTemplate("our-projects.html");
         },1000)   
     } 
     else if($(this).text()==WORK)
