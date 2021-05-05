@@ -13,7 +13,7 @@ var project=[
     },
     {
         name: 'Jyatha',
-        description : 'Jytha.com is the product of cubedsteps dedicated to the Nepali classified market.Jyatha.com is an ad posting platform where you could post ads of anything you would want to sell for free.',
+        description : 'Jyatha.com is the product of cubedsteps dedicated to the Nepali classified market.Jyatha.com is an ad posting platform where you could post ads of anything you would want to sell for free.',
         url : 'https://jyatha.com/',
         backgroundImage : {"background-image":"linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)),url('https://res.cloudinary.com/cubedsteps/image/upload/v1606818185/cubedsteps-site-images/Jyatha_mdpbli.png')"}
     },
