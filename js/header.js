@@ -1,88 +1,96 @@
-
-$(document).on('click', '.logo_img', function(){
+$(document).on('click', '.logo_img', function() {
     animation();
-    navTrans();      
+    navTrans();
     $('.nav-items:nth-child(1)').addClass('home-active active');
-    setTimeout(function(){
+    setTimeout(function() {
         $("#body").empty();
         $("#body").loadTemplate("templates/homepage.html");
-    },1000)
-})
+    }, 1000)
+});
 
-$(document).on('click','.nav-items',function(){
-    if($(this).text()==HOME){
+$(document).on('click', '.nav-items', function() {
+    if ($(this).text() == HOME) {
         animation();
-        navTrans();     
+        navTrans();
         $(this).addClass("home-active active");
-        setTimeout(function(){
+        setTimeout(function() {
             $("#body").empty();
             loadTemplate("homepage.html", {});
-        },1000)
-    } 
-    else if($(this).text()==SERVICES)
-    {
+        }, 1000);
+    } else if ($(this).text() == SERVICES) {
         animation();
-        navTrans();     
+        navTrans();
         $(this).addClass("service-active active");
 
-        setTimeout(function(){
+        setTimeout(function() {
             $("#body").empty();
             loadTemplate("services.html", {});
-        },1000) 
-    } 
-    else if($(this).text()==PROJECTS)
-    {        
+        }, 1000);
+    } else if ($(this).text() == PROJECTS) {
         animation();
-        navTrans();     
+        navTrans();
         $(this).addClass("projects-active active");
 
-        setTimeout(function(){
+        setTimeout(function() {
             $("#body").empty();
             loadTemplate("our-projects.html", {});
-        },1000)   
-    } 
-    else if($(this).text()==WORK)
-    {
+        }, 1000);
+    } else if ($(this).text() == WORK) {
         animation();
-        navTrans();     
-        $(this).addClass("work-active active");        
-        setTimeout(function(){
-            $("#body").empty();            
+        navTrans();
+        $(this).addClass("work-active active");
+        setTimeout(function() {
+            $("#body").empty();
             loadTemplate("lets-work.html", {});
-        },1000)  
+        }, 1000);
+    } else if ($(this).text() == CLASSES) {
+        animation();
+        navTrans();
+        $(this).addClass("classes-active active");
+        setTimeout(function() {
+            $("#body").empty();
+            loadTemplate("classes.html");
+        }, 1000);
     }
-})
+});
 
-function animation(){
-    if($("#homepage").length){
+function animation() {
+    if ($("#homepage").length) {
         homepage_exit();
-    } else if($("#services").length){
+    } else if ($("#services").length) {
         servicepage_exit();
-    } else if($("#projects").length){
+    } else if ($("#projects").length) {
         projectspage_exit();
-    } else if($("#lets-work").length){
+    } else if ($("#lets-work").length) {
         letswork_exit();
+    } else if ($("#classes").length) {
+        classespage_exit();
     }
 }
 
-function homepage_exit(){
+function homepage_exit() {
     $(".homepage-left-column").removeClass('animate__animated animate__rotateInDownLeft')
     $(".homepage-left-column").addClass('animate__animated animate__rotateOutDownLeft')
     $(".homepage-right-column").removeClass('animate__animated animate__rotateInUpRight')
     $(".homepage-right-column").addClass('animate__animated animate__rotateOutUpRight')
 }
 
-function servicepage_exit(){
+function servicepage_exit() {
     $(".service-box").removeClass('animate__animated animate__fadeInUp')
     $(".service-box").addClass('animate__animated animate__fadeOutUp')
 }
 
-function projectspage_exit(){
+function projectspage_exit() {
     $(".project-box").removeClass('animate__animated animate__fadeInUp')
     $(".project-box").addClass('animate__animated animate__fadeOutUp')
 }
 
-function letswork_exit(){
+function classespage_exit() {
+    $(".classes-box").removeClass('animate__animated animate__fadeInUp')
+    $(".classes-box").addClass('animate__animated animate__fadeOutUp')
+}
+
+function letswork_exit() {
     $(".phone-number").removeClass('animate__animated animate__fadeInLeft')
     $(".phone-number").addClass('animate__animated animate__fadeOutRight')
     $(".mail").removeClass('animate__animated animate__fadeInLeft')
@@ -99,14 +107,16 @@ function letswork_exit(){
     $("#map").addClass('animate__animated animate__fadeOut')
 }
 
-function navTrans(){
-    if($(".home-active").length>0){
+function navTrans() {
+    if ($(".home-active").length > 0) {
         $(".nav-items").removeClass("home-active active");
-    }else if($(".service-active").length>0){
+    } else if ($(".service-active").length > 0) {
         $(".nav-items").removeClass("service-active active");
-    } else if($(".projects-active").length>0){
+    } else if ($(".projects-active").length > 0) {
         $(".nav-items").removeClass("projects-active active");
-    } else if($(".work-active").length>0){
+    } else if ($(".work-active").length > 0) {
         $(".nav-items").removeClass("work-active active");
+    } else if ($(".classes-active").length > 0) {
+        $(".nav-items").removeClass("classes-active active");
     }
 }
