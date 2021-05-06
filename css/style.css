@@ -363,7 +363,7 @@ button {
 #body #classes .row .classes-box .project-description,
 #body #classes .row .classes-box .classes-description {
   position: relative;
-  top: 200px;
+  top: 193px;
   transition: 0.5s all;
 }
 
@@ -375,7 +375,7 @@ button {
 #body #classes .row .project-box .classes-description h3,
 #body #classes .row .classes-box .project-description h3,
 #body #classes .row .classes-box .classes-description h3 {
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 #body #projects .row a:hover,
@@ -387,7 +387,7 @@ button {
 #body #projects .row a:hover .classes-description,
 #body #classes .row a:hover .project-description,
 #body #classes .row a:hover .classes-description {
-  top: 15px;
+  top: 100px;
 }
 
 #body #projects img,
