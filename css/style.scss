@@ -337,6 +337,17 @@ button{
 
     #projects{
         .row{
+            
+            .projects__container{
+                $positions: (1: -150px, 2: -100px, 3: -80px, 4: -80px);
+                    @each $name, $value in $positions{
+                        &:nth-child(#{$name}){
+                            .project-description{
+                            bottom: $value;
+                            }
+                        }           
+                    };
+            }
             .project-box{
                 height: 272px;
                 background-position: center;
@@ -346,25 +357,30 @@ button{
                 padding: 20px;
                 overflow: hidden;
 
+                &:hover{
+                    .project-description{
+                        @for $i from 1 through 4 {
+                            &:nth-child(#{$i}) {
+                              bottom: 10px;
+                            }
+                          }
+                    }
+                }
                 .project-description{
-                    position: relative;
-                    top: 193px;
+                    position: absolute;
                     transition: 0.5s all;
                     h3{
                         padding-bottom: 10px;
                     }
+                    
                 }
             }
-
-            a:hover{
-                cursor: pointer;
-                .project-description{
-                    top: 100px;
-                }
-            }
-        }
-        img{
-            height: 178px;
+            // a:hover{
+            //     cursor: pointer;
+            //     .project-description{
+            //         bottom: 0px;
+            //     }
+            // }
         }
     }
 
