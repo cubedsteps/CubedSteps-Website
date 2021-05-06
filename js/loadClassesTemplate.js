@@ -1,1 +1,0 @@
-$("#classes .row").loadTemplate("templates/singleclass.html", classes);
