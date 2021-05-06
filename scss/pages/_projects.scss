@@ -1,0 +1,7 @@
+#body {
+    #projects {
+        .row {
+            @include box(project, 193px, 100px, 10px);
+        }
+    }
+}

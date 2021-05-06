@@ -1,0 +1,61 @@
+@media only screen and (max-width: 768px) {
+    #all-contents {
+        margin-top: 30px;
+    }
+    #header {
+        padding: 50px;
+        height: 211px;
+        .col-md-5 {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            #logo {
+                img {
+                    height: 68px;
+                }
+            }
+        }
+        .col-md-7 {
+            #nav-contents {
+                margin-top: 60px;
+                justify-content: center;
+                .home-active {
+                    left: 35%;
+                }
+                .service-active {
+                    left: 25%;
+                }
+                .projects-active {
+                    left: 25%;
+                }
+                .work-active {
+                    left: 25%;
+                }
+            }
+        }
+    }
+    #homepage {
+        .homepage-left-column {
+            order: 1;
+            div {
+                h1 {
+                    margin-bottom: 30px;
+                    font-size: 25px;
+                    span {
+                        color: $primary_color;
+                    }
+                }
+            }
+        }
+    }
+    #lets-work {
+        .phone-number,
+        .mail,
+        .facebook,
+        .instagram,
+        .medium,
+        .linkedin {
+            justify-content: center;
+        }
+    }
+}

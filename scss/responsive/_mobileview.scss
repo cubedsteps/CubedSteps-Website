@@ -1,0 +1,38 @@
+@media only screen and (max-width: 400px) {
+    $h: 40px, 30px, 25px, 22px, 20px, 16px;
+    $x: 1;
+    @each $i in $h {
+        h#{$x} {
+            font-size: $i;
+            font-family: 'Poppins', sans-serif;
+        }
+        $x: $x+1;
+    }
+    #header {
+        padding: 0px;
+        .col-md-7 {
+            #nav-contents {
+                .nav-items {
+                    font-size: 14px;
+                }
+                .active {
+                    font-size: 30px !important;
+                }
+                .projects-active {
+                    right: -100px !important;
+                }
+            }
+        }
+    }
+    #right-side {
+        .why-us-box {
+            top: 255px;
+            .why-us-all-contents .why-us-content {
+                padding: 10px;
+            }
+        }
+        .why-us-box-click {
+            height: 335px;
+        }
+    }
+}
