@@ -1,0 +1,1 @@
+$("#projects .row").loadTemplate("templates/our-project-contents.html", project);

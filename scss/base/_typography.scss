@@ -14,8 +14,7 @@ body {
     overflow-x: hidden;
 }
 
-p,
-a {
+p, a {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
@@ -25,12 +24,7 @@ a {
 }
 
 //defining font sizes
-$h: 50px,
-40px,
-30px,
-25px,
-22px,
-20px;
+$h: 50px, 40px, 30px, 25px, 22px, 20px;
 $x: 1;
 @each $i in $h {
     h#{$x} {
@@ -40,26 +34,15 @@ $x: 1;
     $x: $x+1;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
+h1, h2, h3, h4, h5, h6, p, a {
     color: $text_color;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     font-weight: 700;
 }
 
-h4,
-h5,
-h6 {
+h4, h5, h6 {
     font-weight: 400;
 }
 

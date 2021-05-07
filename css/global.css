@@ -11,8 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-p,
-a {
+p, a {
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
 }
@@ -51,26 +50,15 @@ h6 {
   font-family: 'Poppins', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
+h1, h2, h3, h4, h5, h6, p, a {
   color: #1A1A1A;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: 700;
 }
 
-h4,
-h5,
-h6 {
+h4, h5, h6 {
   font-weight: 400;
 }
 
@@ -214,8 +202,7 @@ button {
   display: none;
 }
 
-#left-side .testimonial-items .testimonial-content h4,
-#left-side .testimonial-items .testimonial-content p {
+#left-side .testimonial-items .testimonial-content h4, #left-side .testimonial-items .testimonial-content p {
   opacity: 0;
 }
 
@@ -227,8 +214,7 @@ button {
   display: block;
 }
 
-#left-side .testimonial-items .testimonial-content-show h4,
-#left-side .testimonial-items .testimonial-content-show p {
+#left-side .testimonial-items .testimonial-content-show h4, #left-side .testimonial-items .testimonial-content-show p {
   opacity: 1;
 }
 
@@ -342,7 +328,23 @@ button {
   width: 100%;
 }
 
-#body #projects .row .project-box {
+#projects .row .projects__container:nth-child(1) .project-description {
+  bottom: -150px;
+}
+
+#projects .row .projects__container:nth-child(2) .project-description {
+  bottom: -100px;
+}
+
+#projects .row .projects__container:nth-child(3) .project-description {
+  bottom: -80px;
+}
+
+#projects .row .projects__container:nth-child(4) .project-description {
+  bottom: -80px;
+}
+
+#projects .row .project-box {
   height: 272px;
   background-position: center;
   background-size: cover;
@@ -352,26 +354,29 @@ button {
   overflow: hidden;
 }
 
-#body #projects .row .project-box .project-description {
-  position: relative;
-  top: 193px;
+#projects .row .project-box:hover .project-description:nth-child(1) {
+  bottom: 10px;
+}
+
+#projects .row .project-box:hover .project-description:nth-child(2) {
+  bottom: 10px;
+}
+
+#projects .row .project-box:hover .project-description:nth-child(3) {
+  bottom: 10px;
+}
+
+#projects .row .project-box:hover .project-description:nth-child(4) {
+  bottom: 10px;
+}
+
+#projects .row .project-box .project-description {
+  position: absolute;
   transition: 0.5s all;
 }
 
-#body #projects .row .project-box .project-description h3 {
+#projects .row .project-box .project-description h3 {
   padding-bottom: 10px;
-}
-
-#body #projects .row a:hover {
-  cursor: pointer;
-}
-
-#body #projects .row a:hover .project-description {
-  top: 100px;
-}
-
-#body #projects .row img {
-  height: 178px;
 }
 
 #body #services {
@@ -470,12 +475,7 @@ button {
   color: #3273ff;
 }
 
-#body #lets-work #contact-us .mail,
-#body #lets-work #contact-us .instagram,
-#body #lets-work #contact-us .phone-number,
-#body #lets-work #contact-us .facebook,
-#body #lets-work #contact-us .medium,
-#body #lets-work #contact-us .linkedin {
+#body #lets-work #contact-us .mail, #body #lets-work #contact-us .instagram, #body #lets-work #contact-us .phone-number, #body #lets-work #contact-us .facebook, #body #lets-work #contact-us .medium, #body #lets-work #contact-us .linkedin {
   margin-top: 50px;
 }
 
@@ -611,12 +611,7 @@ button {
   #homepage .homepage-left-column div h1 span {
     color: #ff5e46;
   }
-  #lets-work .phone-number,
-  #lets-work .mail,
-  #lets-work .facebook,
-  #lets-work .instagram,
-  #lets-work .medium,
-  #lets-work .linkedin {
+  #lets-work .phone-number, #lets-work .mail, #lets-work .facebook, #lets-work .instagram, #lets-work .medium, #lets-work .linkedin {
     justify-content: center;
   }
 }

@@ -46,8 +46,7 @@
         }
         .testimonial-content {
             display: none;
-            h4,
-            p {
+            h4, p {
                 opacity: 0;
             }
             .testimonial {
@@ -56,8 +55,7 @@
         }
         .testimonial-content-show {
             display: block;
-            h4,
-            p {
+            h4, p {
                 opacity: 1;
             }
         }

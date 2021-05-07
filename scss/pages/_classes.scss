@@ -1,7 +1,32 @@
 #body {
     #classes {
         .row {
-            @include box(classes, 200px, 15px, 15px);
+            .classes-box {
+                height: 272px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: none;
+                position: relative;
+                padding: 20px;
+                overflow: hidden;
+                .classes-description {
+                    position: relative;
+                    top: 200px;
+                    transition: 0.5s all;
+                    h3 {
+                        padding-bottom: 15px;
+                    }
+                }
+            }
+            a:hover {
+                cursor: pointer;
+                .classes-description {
+                    top: 15px;
+                }
+            }
+            img {
+                height: 178px;
+            }
         }
     }
 }
