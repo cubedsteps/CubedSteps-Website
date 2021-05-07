@@ -13,7 +13,7 @@ var project=[
     },
     {
         name: 'Jyatha',
-        description : 'Jyatha.com is the product of cubedsteps dedicated to the Nepali classified market.Jyatha.com is an ad posting platform where you could post ads of anything you would want to sell for free.',
+        description : 'Jyatha.com is the product of cubedsteps dedicated to the Nepali classified market. Jyatha.com is an ad posting platform where you could post ads of anything you would want to sell for free.',
         url : 'https://jyatha.com/',
         backgroundImage : {"background-image":"linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)),url('https://res.cloudinary.com/cubedsteps/image/upload/v1606818185/cubedsteps-site-images/Jyatha_mdpbli.png')"}
     },
@@ -22,7 +22,6 @@ var project=[
         description : 'Insight jet is a tool to collect reviews and ratings from your customer through email and sms. It provides a clear insight of what customers say about you and your business.',
         url : 'https://insightjet.com/',
         backgroundImage : {"background-image":"linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)),url('https://res.cloudinary.com/cubedsteps/image/upload/v1606818174/cubedsteps-site-images/InsightJet_ldafvh.png')"}
-        
     },
     {
         name: 'Paxsafe',
