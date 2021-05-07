@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+//defining variables
+$h1: 50px;
+$h2: 40px;
+$h3: 30px;
+$h4: 25px;
+$h5: 22px;
+$h6: 20px;
+$p: 16px;
+$a: 20px;
+body {
+    background-color: $bg-color;
+    overflow-x: hidden;
+}
+
+p, a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.small-text {
+    font-size: 14px;
+}
+
+//defining font sizes
+$h: 50px, 40px, 30px, 25px, 22px, 20px;
+$x: 1;
+@each $i in $h {
+    h#{$x} {
+        font-size: $i;
+        font-family: 'Poppins', sans-serif;
+    }
+    $x: $x+1;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+    color: $text_color;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+h4, h5, h6 {
+    font-weight: 400;
+}
+
+a {
+    font-size: 16px;
+}
+
+.white {
+    color: $white_color;
+}
+
+.primary-light-color {
+    color: $primary-light-color;
+}

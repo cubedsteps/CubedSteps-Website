@@ -1,0 +1,60 @@
+#body {
+    #services {
+        margin-top: 50px;
+        .row {
+            .service-box {
+                overflow: hidden;
+                padding: 0;
+                text-align: center;
+                transition: 0.5s all;
+                height: 261px;
+                .service-content {
+                    padding: 20px 0;
+                    img {
+                        height: 138px;
+                    }
+                }
+            }
+            .show-more-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .show-more-arrow {
+                    margin-left: 20px;
+                    font-size: 22px;
+                    transition: 0.3s all;
+                }
+            }
+            .show-more {
+                opacity: 0;
+                background-color: $primary_color;
+                padding: 10px;
+                position: relative;
+                transition: all 0.3s;
+            }
+            .show-more-hover {
+                top: 40px;
+            }
+            .service-box:hover {
+                -webkit-box-shadow: -15px 26px 30px 0px rgba(255, 94, 70, 0.2);
+                -moz-box-shadow: -15px 26px 30px 0px rgba(255, 94, 70, 0.2);
+                box-shadow: -15px 26px 30px 0px rgba(255, 94, 70, 0.2);
+                .show-more-hover {
+                    top: 0px;
+                    cursor: pointer;
+                    opacity: 1;
+                }
+            }
+            .show-more-click {
+                top: -220px;
+                height: 100%;
+                opacity: 1;
+                cursor: pointer;
+            }
+            .service-description {
+                margin-top: 30px;
+                text-align: justify;
+            }
+        }
+    }
+}

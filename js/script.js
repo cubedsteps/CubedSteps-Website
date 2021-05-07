@@ -9,6 +9,6 @@ function loadTemplate(template,data={}) {
     });
 }
 
-function load_footer(){
+function load_footer() {
     $("#footer").loadTemplate("templates/footer.html");
 }
