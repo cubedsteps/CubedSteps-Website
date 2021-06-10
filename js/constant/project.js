@@ -6,9 +6,9 @@ var project=[
     //     backgroundImage : {"background-image":"linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)),url('https://res.cloudinary.com/cubedsteps/image/upload/v1620224464/cubedsteps-site-images/Circle_flrmqb.png')"}
     // },
     {
-        name: 'Repairmobile',
-        description : 'Repair Mobile helps users connect with the right mobile device repairer with better price in their locality. Users can choose the mobile brand and the seeking service and the platform shows them the mobile repairer in their vicinity. The platform also allows the customers to create online booking, compare prices with other service providers.',
-        url : 'https://repairmobile.com.au',
+        name: 'Telcobell',
+        description : 'Telcobell helps users connect with the right mobile device repairer with better price in their locality. Users can choose the mobile brand and the seeking service and the platform shows them the mobile repairer in their vicinity. The platform also allows the customers to create online booking, compare prices with other service providers.',
+        url : 'https://telcobell.com.au',
         backgroundImage : {"background-image":"linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)),url('https://res.cloudinary.com/cubedsteps/image/upload/v1620224432/cubedsteps-site-images/repairmobile_j50g4t.png')"}
     },
     {
